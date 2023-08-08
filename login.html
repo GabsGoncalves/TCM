@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personagens</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="assets/img/Hollow Icon.svg" alt="">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Personagens</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Amuletos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Mapa interativo</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <img src="assets/img/Hollow Icon.svg" alt="">
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Personagens</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Amuletos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Mapa interativo</a></li>
+            </ul>
+
+            <div class="login-button">
+                <img src="assets/img/Hollow Icon.svg" alt="">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="login">
+            <div id="imagem_hollow">
+                <img id="imagem_hollow_div" src="assets/img/Hollow_login_desk.webp" alt="Hollow Knight segurando uma espada olhando para cima">
+            </div>
+            <div id="login_inputs">
+                <img id="titledesk" src="assets/img/image 1.svg" alt="Texto escrito na fonte de titulo de hollow knight 'Login'">
+                <img id="titlemobile" src="assets/img/login_title_mobile.webp" alt="Texto escrito na fonte de titulo de hollow knight 'Login'">
+                <form id="dados_login">
+                    <label for="email"></label>
+                    <input type="email" class="inputs" name="email" size="50" placeholder="Insira seu Email">
+                    <label for="senha"></label>
+                    <input type="password" class="inputs" name="senha" size="50" placeholder="Insira sua senha">
+                    <input type="submit" id="Entrar" value="Entrar">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="assets/js/App.js"></script>
+</html>
