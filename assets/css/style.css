@@ -34,7 +34,17 @@ main {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background: var(--cor-fundo);
+}
+
+#bg_video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 4rem;
+    z-index: -1;
 }
 
 .nav-bar {
@@ -71,6 +81,30 @@ main {
     font: var(--fonte);
 }
 
+.nav-item a {
+    position: relative;
+}
+
+.nav-item a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.nav-item a:hover::before {
+    width: 100%;
+}
+
+.nav-item a:hover {
+    color: #c0c0c0;
+}
+
+
 .login-button button {
     border: none;
     padding: 10px 15px;
@@ -91,37 +125,6 @@ main {
 }
 
 .mobile-menu {
-    display: none;
-}
-
-#hornet {
-    display: flex;
-    flex-direction: row;
-}
-
-.imagem{
-    margin: 50px 200px 50px 50px;
-}
-
-.imagem img {
-    flex: 40%;
-}
-
-.texto {
-    flex: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.texto p {
-    color: #fff;
-    font: var(--fonte);
-    padding: 10px;
-    font-size: 1.2em;
-}
-
-#divisormobile {
     display: none;
 }
 
@@ -166,46 +169,5 @@ main {
 
     .login-button button a {
         font: var(--fonte);
-    }
-
-    #hornet {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .imagem{
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    
-    .imagem img {
-        padding: 20px;
-    }
-
-    #divisormobile {
-        display: block;
-    }
-    
-    .texto {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.2rem;
-        padding: 10px;
-        text-align: center;
-    }
-
-    #tituloperso {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #tituloperso img {
-        width: 272px;
-        height: 111px;
     }
 }
