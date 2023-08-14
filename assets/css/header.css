@@ -2,7 +2,7 @@
 
 :root {
     --cor-fundo: linear-gradient(180deg, rgba(35, 35, 37, 0.20) 0%, rgba(1, 1, 1, 0.20) 100%), linear-gradient(90deg, #06060A 0%, #090915 50.31%, #050506 100%);
-    --fonte: font-family: 'VT323', monospace;
+    --fonte: font-family: 'VT323', monospace; font-size: 1.1rem;
 }
 
 ::-webkit-scrollbar { /*Trilho */
@@ -27,18 +27,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
-}
-
-main {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background-image: url(/TCM/assets/img/bg_login_desk.svg);
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
 }
 
 .nav-bar {
@@ -69,11 +57,34 @@ main {
 
 .nav-link {
     text-decoration: none;
-    font-size: 1.15rem;
     color: #fff;
     font-weight: 400;
     font: var(--fonte);
 }
+
+.nav-item a {
+    position: relative;
+}
+
+.nav-item a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.nav-item a:hover::before {
+    width: 100%;
+}
+
+.nav-item a:hover {
+    color: #c0c0c0;
+}
+
 
 .login-button button {
     border: none;
@@ -96,77 +107,6 @@ main {
 
 .mobile-menu {
     display: none;
-}
-
-#login {
-    display: flex;
-    flex-direction: row;
-    width: 85%;
-}
-
-#imagem_hollow, #login_inputs {
-    flex: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#titledesk {
-    width: 434px;
-    height: 131px;
-    margin-bottom: 49px;
-}
-
-#titlemobile {
-    display: none;
-}
-
-/* RESPONSIVIDADE TITULO IMAGEM */
-@media screen and (min-width: 1920px) {
-    #login_inputs img {
-        width: 650px;
-        height: 196px;
-    }
-}
-
-#dados_login {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.inputs {
-    width: 24.0625rem;
-    height: 3.9375rem;
-    border-radius: 0.3125rem;
-    background-color: rgba(111, 106, 106, 0.90);
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
-    margin: 15px;
-    font-family: 'VT323', monospace;
-    font-size: 1.2rem;
-    padding: 5px;
-    color: #fff;
-}
-
-.inputs::placeholder {
-    color: #FFFFFF80;
-    font-family: 'VT323', monospace;
-    text-align: center;
-}
-
-#Entrar {
-    border-radius: 0.575rem;
-    background-color: rgba(196, 195, 195, 0.90);
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
-    width: 6.1875rem;
-    height: 3.9375rem;
-    margin-top: 15px;
 }
 
 @media screen and (max-width: 540px) {
@@ -208,43 +148,7 @@ main {
         display: block;
     }
 
-    .login-button img {
-        display: none;
-    }
-
-    main {
-        background-image: url(/TCM/assets/img/bg_login_mobile.webp);
-    }
-
-    #imagem_hollow {
-        display: none;
-    }
-
-    .inputs {
-        width: 16.0625rem;
-        height: 2.9375rem;
-        
-    }
-
-    #titledesk {
-        display: none;
-    }
-
-    #titlemobile {
-        display: block;
-    }
-
-    #login {
-        border-radius: 0.75rem;
-        background-color: rgba(255, 255, 255, 0.30);
-        height: 70vh;
-        margin-bottom: 11.50rem;
-    }
-
-    #dados_login {
-        margin-top: 11.875rem;
+    .login-button button a {
+        font: var(--fonte);
     }
 }
-
-
-/* 268 81 */

@@ -2,7 +2,7 @@
 
 :root {
     --cor-fundo: linear-gradient(180deg, rgba(35, 35, 37, 0.20) 0%, rgba(1, 1, 1, 0.20) 100%), linear-gradient(90deg, #06060A 0%, #090915 50.31%, #050506 100%);
-    --fonte: font-family: 'VT323', monospace;
+    --fonte: font-family: 'VT323', monospace; font-size: 1.1rem;
 }
 
 ::-webkit-scrollbar { /*Trilho */
@@ -18,14 +18,7 @@
 * {
     padding: 0;
     margin: 0;
-}
-
-header {
-    background: var(--cor-fundo);
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+    font: var(--fonte);
 }
 
 main {
@@ -34,140 +27,57 @@ main {
     display: flex;
     flex-direction: column;
     height: 100%;
+    background: var(--cor-fundo);
 }
 
 #bg_video {
-    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin-top: 4rem;
-    z-index: -1;
 }
 
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.8rem 6rem;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.nav-list {
-    display: flex;
-    align-items: center;
-}
-
-.nav-list ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.nav-item {
-    margin: 0 15px;
-}
-
-.nav-link {
-    text-decoration: none;
-    font-size: 1.15rem;
-    color: #fff;
-    font-weight: 400;
-    font: var(--fonte);
-}
-
-.nav-item a {
-    position: relative;
-}
-
-.nav-item a::before {
-    content: '';
+#entre_vazio_desk {
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    transition: .3s;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: entre_vazio 3s ease-in-out;
 }
 
-.nav-item a:hover::before {
-    width: 100%;
-}
-
-.nav-item a:hover {
-    color: #c0c0c0;
-}
-
-
-.login-button button {
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #fff;
-}
-
-.login-button button a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: 500;
-    font-size: 1.1rem;
-    font: var(--fonte);
-}
-
-.mobile-menu-icon {
+#entre_vazio_mobile {
     display: none;
 }
 
-.mobile-menu {
-    display: none;
+@keyframes entre_vazio {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 @media screen and (max-width: 540px) {
-    .nav-bar {
-        padding: 1.5rem 4rem;
-    }
-    .nav-item {
-        display: none;
-    }
-    .login-button {
-        display: none;
-    }
-    .mobile-menu-icon {
-        display: block;
-    }
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
-    .mobile-menu .login-button {
-        display: block;
-        padding: 1rem 2rem;
-    }
-    .mobile-menu .login-button button {
-        width: 100%;
-    }
-    .open {
-        display: block;
+    #bg_video {
+        position: absolute;
+        margin-top: 4rem;
     }
 
-    .login-button button a {
-        font: var(--fonte);
+    #entre_vazio_desk {
+        display: none;
     }
+
+    #entre_vazio_mobile {
+        display: block;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: entre_vazio 3s ease-in-out;
+    }
+
 }
