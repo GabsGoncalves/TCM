@@ -35,7 +35,7 @@ main {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-image: url(/TCM/assets/img/bg_login_desk.svg);
+    background-image: url(TCM/assets/img/bg_login_desk.svg);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -245,6 +245,3 @@ main {
         margin-top: 11.875rem;
     }
 }
-
-
-/* 268 81 */
