@@ -29,44 +29,44 @@ header {
     z-index: 1;
 }
 
-.nav-bar {
+.new-nav-bar {
     display: flex;
     justify-content: space-between;
     padding: 0.8rem 6rem;
 }
 
-.logo {
+.new-logo {
     display: flex;
     align-items: center;
 }
 
-.nav-list {
+.new-nav-list {
     display: flex;
     align-items: center;
 }
 
-.nav-list ul {
+.new-nav-list #ben10 {
     display: flex;
     justify-content: center;
     list-style: none;
 }
 
-.nav-item {
+.new-nav-item {
     margin: 0 15px;
 }
 
-.nav-link {
+.new-nav-link {
     text-decoration: none;
     color: #fff;
     font-weight: 400;
     font: var(--fonte);
 }
 
-.nav-item a {
+.new-nav-item a {
     position: relative;
 }
 
-.nav-item a::before {
+.new-nav-item a::before {
     content: '';
     position: absolute;
     top: 100%;
@@ -77,23 +77,23 @@ header {
     transition: .3s;
 }
 
-.nav-item a:hover::before {
+.new-nav-item a:hover::before {
     width: 100%;
 }
 
-.nav-item a:hover {
+.new-nav-item a:hover {
     color: #c0c0c0;
 }
 
 
-.login-button button {
+.new-login-button button {
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     background-color: #fff;
 }
 
-.login-button button a {
+.new-login-button button a {
     text-decoration: none;
     color: #000000;
     font-weight: 500;
@@ -101,54 +101,54 @@ header {
     font: var(--fonte);
 }
 
-.mobile-menu-icon {
+.new-mobile-menu-icon {
     display: none;
 }
 
-.mobile-menu {
+.new-mobile-menu {
     display: none;
 }
 
 @media screen and (max-width: 540px) {
-    .nav-bar {
+    .new-nav-bar {
         padding: 1.5rem 4rem;
     }
-    .nav-item {
+    .new-nav-item {
         display: none;
     }
-    .login-button {
+    .new-login-button {
         display: none;
     }
-    .mobile-menu-icon {
+    .new-mobile-menu-icon {
         display: block;
     }
-    .mobile-menu-icon button {
+    .new-mobile-menu-icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
-    .mobile-menu ul {
+    .new-mobile-menu #ben10 {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
     }
-    .mobile-menu .nav-item {
+    .new-mobile-menu .new-nav-item {
         display: block;
         padding-top: 1.2rem;
     }
-    .mobile-menu .login-button {
+    .new-mobile-menu .new-login-button {
         display: block;
         padding: 1rem 2rem;
     }
-    .mobile-menu .login-button button {
+    .new-mobile-menu .new-login-button button {
         width: 100%;
     }
-    .open {
+    .new-open {
         display: block;
     }
 
-    .login-button button a {
+    .new-login-button button a {
         font: var(--fonte);
     }
 }

@@ -54,10 +54,10 @@
                 <img id="titlemobile" src="assets/img/login_title_mobile.webp" alt="Texto escrito na fonte de titulo de hollow knight 'Login'">
                 <form id="dados_login">
                     <label for="email"></label>
-                    <input type="email" class="inputs" name="email" size="50" placeholder="Insira seu Email">
+                    <input id="email" type="email" class="inputs" name="email" size="50" placeholder="Insira seu Email" required>
                     <label for="senha"></label>
-                    <input type="password" class="inputs" name="senha" size="50" placeholder="Insira sua senha">
-                    <input type="submit" id="Entrar" value="Entrar">
+                    <input id="senha" type="password" class="inputs" name="senha" size="50" placeholder="Insira sua senha" required>
+                    <button onclick="Cadastrar()" type="button" id="Entrar">Cadastrar</button>
                 </form>
             </div>
         </section>
