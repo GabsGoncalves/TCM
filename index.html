@@ -48,25 +48,51 @@
     </header>    
     <main>
         <video id="bg_video" src="assets/video/Hollow_Index_Ani.mp4" autoplay muted loop></video>
-        <a href="infos_Hollow.html">
-            <div id="entre_vazio_desk">
-                <img src="assets/img/entre_vazio.webp" alt="Imagem com fonte de hollow knight escrito Entre no Vazio">
-            </div>
-        </a>
+        <div id="entre_vazio_desk">
+            <img src="assets/img/entre_vazio.webp" alt="Imagem com fonte de hollow knight escrito Entre no Vazio">
+        </div>
         <div id="entre_vazio_mobile">
             <img src="assets/img/entre_vazio_mobile.webp"
                 alt="Imagem com fonte de hollow knight escrito Entre no Vazio">
         </div>
+        <section id="zinho_desk" class="carousel slide" data-bs-ride="carousel"> <!--Para uso de bootstrap é idealusar nomes em igles pois o boot segue ete momes-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="carrossel_item_desk" src="assets/img/carrossel_hollow_desk.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="carrossel_item_desk" src="assets/img/carrossel_hornet_desk.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="carrossel_item_desk" src="assets/img/carrossel_quirrel_desk.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="carrossel_item_desk" src="assets/img/carrossel_sonhadores_desk.png" alt="">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#zinho" data-bs-slide="prev"></a>
+            <a class="carousel-control-next" href="#zinho" data-bs-slide="next"></a>
+        </section>
+        
+        <section id="zinho_mobile" class="carousel slide" data-bs-ride="carousel"> <!--Para uso de bootstrap é idealusar nomes em igles pois o boot segue ete momes-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="carrossel_item_mobile" src="assets/img/carrossel_hollow_mobile.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="carrossel_item_mobile" src="assets/img/carrossel_hornet_mobile.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="carrossel_item_mobile" src="assets/img/carrossel_quirrel_mobile.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="carrossel_item_mobile" src="assets/img/carrossel_sonhadores_mobile.png" alt="">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#zinho" data-bs-slide="prev"></a>
+            <a class="carousel-control-next" href="#zinho" data-bs-slide="next"></a>
+        </section>
     </main>
-    <section>
-        <div> </div>
-    </section>
-    <section>
-        <div> </div>
-    </section>
-    <section>
-        <div></div>
-    </section>
 </body>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/App.js"></script>
