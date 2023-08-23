@@ -2,7 +2,6 @@
 
 :root {
     --cor-fundo: linear-gradient(180deg, rgba(35, 35, 37, 0.20) 0%, rgba(1, 1, 1, 0.20) 100%), linear-gradient(90deg, #06060A 0%, #090915 50.31%, #050506 100%);
-    --fonte: font-family: 'VT323', monospace; font-size: 1.1rem;
 }
 
 ::-webkit-scrollbar { /*Trilho */
@@ -14,11 +13,16 @@
     background: #c0c0c0;
     border-radius: 10px;
 }
+
+@font-face {
+    font-family:'Trajan' ;
+    src: url(Trajan\ Pro\ Regular.ttf) format('opentype');
+}
   
 * {
     padding: 0;
     margin: 0;
-    font-family: 'VT323', monospace;
+    font-family: Trajan;
 }
 
 header {
@@ -32,7 +36,7 @@ header {
 .new-nav-bar {
     display: flex;
     justify-content: space-between;
-    padding: 0.8rem 6rem;
+    padding: 0.4rem 3rem;
 }
 
 .new-logo {
@@ -59,7 +63,6 @@ header {
     text-decoration: none;
     color: #fff;
     font-weight: 400;
-    font: var(--fonte);
 }
 
 .new-nav-item a {
@@ -98,7 +101,6 @@ header {
     color: #000000;
     font-weight: 500;
     font-size: 1.1rem;
-    font: var(--fonte);
 }
 
 .new-mobile-menu-icon {
@@ -107,6 +109,15 @@ header {
 
 .new-mobile-menu {
     display: none;
+}
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ol, ul {
+    padding-left: 0;
 }
 
 @media screen and (max-width: 540px) {
@@ -149,6 +160,6 @@ header {
     }
 
     .new-login-button button a {
-        font: var(--fonte);
+        
     }
 }
