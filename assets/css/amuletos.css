@@ -1,0 +1,33 @@
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--cor-fundo);
+}
+
+#div_title_amuletos_desk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#amuletos {
+    flex: 65%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#info_amuleto {
+    flex: 35%;
+}
+
+#amuletos div img {
+    width: 61px;
+    height: 57px;
+}
