@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+    --cor-fundo: linear-gradient(180deg, rgba(35, 35, 37, 0.20) 0%, rgba(1, 1, 1, 0.20) 100%), linear-gradient(90deg, #06060A 0%, #090915 50.31%, #050506 100%);
+}
+
+::-webkit-scrollbar { /*Trilho */
+    width: 10px;
+    background: var(--cor-fundo);
+}
+
+::-webkit-scrollbar-thumb { /* Rolagem */
+    background: #c0c0c0;
+    border-radius: 10px;
+}
+
+@font-face {
+    font-family:'Trajan' ;
+    src: url(Trajan\ Pro\ Regular.ttf) format('opentype');
+}
+  
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Trajan;
+}
+
+main {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--cor-fundo);
+}
+
+#zinho_desk {
+    width: 98%;
+    margin-top: 50px;
+}
+
+#zinho_desk, #zinho_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#zinho_mobile {
+    display: none;
+}
+
+.carrossel_item_desk {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.imagem_personagem {
+    flex: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1024px) {
+    .imagem_personagem {
+        height: 76.8897vh;
+    }
+    
+    .textinho {
+        height: 76.8897vh;
+    }
+}
+
+.fundo_personagem {
+    border-radius: 0.75rem;
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(3.5px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fundo_personagem img {
+    padding: 10px;
+}
+
+.divisor {
+    flex: 3%;
+    margin: 0 4.69rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textinho {
+    display: flex;
+    flex-direction: column;
+    flex: 57%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+#bg_video {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#entre_vazio_desk {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: entre_vazio 3s ease-in-out;
+}
+
+#entre_vazio_mobile {
+    display: none;
+}
+
+.texto_1 {
+    color: #FFF;
+    font-size: 1.750rem;
+    margin-bottom: 20px;
+}
+
+.texto_2 {
+    color: #FFF;
+    font-size: 2.125rem;  
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@keyframes entre_vazio {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media screen and (max-width: 540px) {
+
+    #bg_video {
+        position: absolute;
+        margin-top: 4rem;
+    }
+
+    #entre_vazio_desk {
+        display: none;
+    }
+
+    #entre_vazio_mobile {
+        display: block;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: entre_vazio 3s ease-in-out;
+    }
+
+    .carrossel_item_mobile {
+        width: 100vw;
+    }
+
+    .imagem_personagem {
+        padding: 20px;
+    }
+
+    .divisor img {
+        padding: 20px;
+    }
+
+    .textinho {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .texto_1 {
+        color: #FFF;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .texto_2 {
+        color: #FFF;
+        font-size: 1.375rem;  
+    }
+
+    #zinho_mobile {
+        display: block;
+        margin-top: 57rem;
+    }
+
+    #zinho_desk {
+        display: none;
+    }
+
+}
