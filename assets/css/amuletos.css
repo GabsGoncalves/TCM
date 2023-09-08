@@ -1,8 +1,14 @@
 main {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     background: var(--cor-fundo);
+    background-image: url(/TCM/assets/img/bg_amuletos_desk.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #div_title_amuletos_desk {
@@ -15,19 +21,61 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #00000076;
+    width: 90%;
+    height: 100vh;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
 }
 
 #amuletos {
     flex: 65%;
     display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#linha1, #linha2, #linha3, #linha4, #linha5 {
+    display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 #info_amuleto {
     flex: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#nome_amuleto, #cardImagem {
+    padding: 0.5rem;
+}
+
+#cardInfo, #cardInfo2 {
+    text-align: center;
 }
 
 #amuletos div img {
     width: 61px;
     height: 57px;
+}
+
+.amuletinho:hover {
+    animation: rotate_amuleto .7s ease-in-out;
+}
+
+.espacinho {
+    width: 30px;
+}
+
+@keyframes rotate_amuleto {
+    from {rotate: 0deg;}
+    to {rotate: 360deg;}
+}
+
+#info_amuleto h2, p {
+    color: #fff;
 }
