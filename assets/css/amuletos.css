@@ -5,7 +5,7 @@ main {
     justify-content: center;
     height: 100vh;
     background: var(--cor-fundo);
-    background-image: url(/TCM/assets/img/bg_amuletos_desk.svg);
+    background-image: url(/TCM/assets/img/bg_amuletos_desk.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
