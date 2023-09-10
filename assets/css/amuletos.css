@@ -116,6 +116,7 @@ main {
     
     #cardInfo_mobile, #cardInfo2_mobile {
         text-align: center;
+        padding: 8px;
     }
 
     #info_amuleto_mobile h2, p {
