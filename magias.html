@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Knight</title>
+    <link rel="stylesheet" href="assets/css/magias.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="new-nav-bar">
+            <div class="new-logo">
+                <img src="assets/img/Hollow Icon.svg" alt="">
+            </div>
+            <div class="new-nav-list">
+                <ul id="ben10">
+                    <li class="new-nav-item"><a href="index.html" class="new-nav-link">Início</a></li>
+                    <li class="new-nav-item"><a href="seletor_perso.html" class="new-nav-link">Personagens</a></li>
+                    <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Amuletos</a></li>
+                    <li class="new-nav-item"><a href="mapa.html" class="new-nav-link">Mapa interativo</a></li>
+                    <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Magias</a></li>
+                    <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Dark</a></li>
+                </ul>
+            </div>
+            <div class="new-login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+    
+            <div class="new-mobile-menu-icon">
+                <button onclick="menuShow()"><img class="new-icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="new-mobile-menu">
+            <ul id="ben10">
+                <li class="new-nav-item"><a href="index.html" class="new-nav-link">Início</a></li>
+                <li class="new-nav-item"><a href="seletor_perso.html" class="new-nav-link">Personagens</a></li>
+                <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Amuletos</a></li>
+                <li class="new-nav-item"><a href="mapa.html" class="new-nav-link">Mapa interativo</a></li>
+                <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Magias</a></li>
+                <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Dark</a></li>
+            </ul>
+            <div class="new-login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="area">
+            <section id="area_magia">
+                <section class="completo">
+                    <div class="card">
+                        <div class="dentro" onclick="infoMagiaCompleto('espirito')">
+                            <img src="assets/img_magias/fundo_magia.svg" alt="">
+                        </div>
+                        <img onclick="upgradeMagia('espirito')" class="title" src="assets/img_magias/espirito_vingativo.svg" alt="">
+                    </div>
+                    <div class="info_magia" id="espirito">
+                    </div>
+                </section>
+                <section class="completo">
+                    <div class="card">
+                        <div class="dentro" onclick="infoMagiaCompleto('rasante')">
+                            <img src="assets/img_magias/fundo_magia.svg" alt="">
+                        </div>
+                        <img onclick="upgradeMagia('rasante')" class="title rasanteimg" src="assets/img_magias/rasante.svg" alt="">
+                    </div>
+                    <div class="info_magia" id="rasante">
+                    </div>
+                </section>
+                <section class="completo">
+                    <div class="card">
+                        <div class="dentro" onclick="infoMagiaCompleto('uivantes')">
+                            <img src="assets/img_magias/fundo_magia.svg" alt="">
+                        </div>
+                        <img onclick="upgradeMagia('uivantes')" class="title uivantesimg" src="assets/img_magias/uivantes.svg" alt="">
+                    </div>
+                    <div class="info_magia" id="uivantes">
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+<script src="assets/js/magias.js"></script>
+<script src="assets/js/App.js"></script>
+</html>

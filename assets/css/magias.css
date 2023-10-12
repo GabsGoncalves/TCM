@@ -1,0 +1,190 @@
+:root {
+    --cor-fundo: linear-gradient(180deg, rgba(35, 35, 37, 0.20) 0%, rgba(1, 1, 1, 0.20) 100%), linear-gradient(90deg, #06060A 0%, #090915 50.31%, #050506 100%);
+}
+
+html {
+    background:var(--cor-fundo);
+    z-index: -1;
+}
+
+body {
+    background-image: url(/assets/img_magias/bg.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+#area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #43867d6b;
+    border-radius: 25px;
+}
+
+#area_magia, #area_arte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.card {
+    position: relative;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.completo {
+    border-radius: 25px;
+}
+
+.title {
+    inset: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+.dentro, .title {
+    transition: all 0.5s;
+}
+
+.dentro img {
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    border-radius: 8px;
+    width: 100%;
+    height: 47vh;
+}
+
+.card:hover .dentro {
+    transform: perspective(900px) translatey(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px #00000075;
+    filter: blur(0.6px);
+}
+
+.info_magia {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+.info_magia a {
+    color: #99dbfa;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.info_magia p {
+    padding: 10px;
+}
+
+.completo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 19vw;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#textinho {
+    text-align: center;
+}
+
+.link1:hover, .link2:hover {
+    color: #fff;
+}
+
+.link1 {
+    color: #99dbfa;
+}
+
+.link1, .link2 {
+    padding: 15px;
+}
+
+.uivantesimg {
+    width: 55%;
+}
+
+.rasanteimg {
+    width: 60%;
+}
+
+.infoAdicional {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#leiaMais p {
+    font-size: 0.7rem;
+}
+
+#leiaMais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+#arrowUp, #arrowUp2, #arrowUp3 {
+    display: none;
+    padding: 10px;
+}
+
+#arrowDown, #arrowUp2, #arrowUp3 {
+    padding: 10px;
+}
+
+.videosMagias {
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#leiaMais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#coco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
