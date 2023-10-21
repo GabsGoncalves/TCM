@@ -29,7 +29,7 @@ main {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-image: url(/TCM/img/bg_login_desk.svg);
+    background-image: url(../img/bg_login_desk.svg);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -129,7 +129,7 @@ main {
 
 @media screen and (max-width: 540px) {
     main {
-        background-image: url(/TCM/img/bg_login_mobile.webp);
+        background-image: url(../img/bg_login_mobile.webp);
     }
 
     #imagem_hollow {
