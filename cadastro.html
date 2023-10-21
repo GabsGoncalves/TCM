@@ -9,12 +9,12 @@
 </head>
 <body>
     <header>
-        <nav class="nav-bar">
-            <div class="logo">
+    <nav class="new-nav-bar">
+            <div class="new-logo">
                 <img src="assets/img/Hollow Icon.svg" alt="">
             </div>
-            <div class="nav-list">
-                <ul>
+            <div class="new-nav-list">
+                <ul id="ben10">
                     <li class="new-nav-item"><a href="index.html" class="new-nav-link">Início</a></li>
                     <li class="new-nav-item"><a href="seletor_perso.html" class="new-nav-link">Personagens</a></li>
                     <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Amuletos</a></li>
@@ -23,16 +23,16 @@
                     <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Dark</a></li>
                 </ul>
             </div>
-            <div class="login-button">
+            <div class="new-login-button">
                 <button><a href="login.html">Entrar</a></button>
             </div>
-
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+    
+            <div class="new-mobile-menu-icon">
+                <button onclick="menuShow()"><img class="new-icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
             </div>
         </nav>
-        <div class="mobile-menu">
-            <ul>
+        <div class="new-mobile-menu">
+            <ul id="ben10">
                 <li class="new-nav-item"><a href="index.html" class="new-nav-link">Início</a></li>
                 <li class="new-nav-item"><a href="seletor_perso.html" class="new-nav-link">Personagens</a></li>
                 <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Amuletos</a></li>
@@ -40,8 +40,7 @@
                 <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Magias</a></li>
                 <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Dark</a></li>
             </ul>
-            <div class="login-button">
-                <img src="assets/img/Hollow Icon.svg" alt="">
+            <div class="new-login-button">
                 <button><a href="login.html">Entrar</a></button>
             </div>
         </div>
@@ -55,12 +54,16 @@
                 <img id="titledesk" src="assets/img/image 1.svg" alt="Texto escrito na fonte de titulo de hollow knight 'Login'">
                 <img id="titlemobile" src="assets/img/login_title_mobile.webp" alt="Texto escrito na fonte de titulo de hollow knight 'Login'">
                 <form id="dados_login">
+                    <label for="nome"></label>
+                    <input type="text" class="inputs" name="nome" size="50" placeholder="Insira seu Username" required>
                     <label for="email"></label>
-                    <input id="email" type="email" class="inputs" name="email" size="50" placeholder="Insira seu Email" required>
+                    <input type="email" class="inputs" name="username" size="50" placeholder="Insira seu Email" required>
                     <label for="senha"></label>
-                    <input id="senha" type="password" class="inputs" name="senha" size="50" placeholder="Insira sua senha" required>
-                    <button onclick="Cadastrar()" type="button" id="Entrar">Cadastrar</button>
+                    <input type="password" class="inputs" name="password" size="50" placeholder="Insira sua senha" required>
+                    <input type="submit" name="submit" id="Entrar" value="Cadastrar">
                 </form>
+                <br>
+                <p id="nãoPossui">Já possui uma conta?<a href="login.html"><b>ENTRE</b></a></p>
             </div>
         </section>
     </main>
