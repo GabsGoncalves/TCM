@@ -1,0 +1,63 @@
+::-webkit-scrollbar { /*Trilho */
+    width: 10px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 2%, rgba(11,11,24,1) 33%, rgba(11,10,29,1) 69%, rgba(0,0,0,1) 100%);
+}
+
+::-webkit-scrollbar-thumb { /* Rolagem */
+    background: #c0c0c0;
+    border-radius: 10px;
+}
+
+@font-face {
+    font-family:'Trajan' ;
+    src: url(trajan.ttf) format('opentype');
+}
+  
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Trajan;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 0.6fr 2fr 0.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titleQuiz . tempo"
+      "QUIZ QUIZ QUIZ"
+      "usuario . contador";
+    height: 100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 2%, rgba(11,11,24,1) 33%, rgba(11,10,29,1) 69%, rgba(0,0,0,1) 100%);
+}
+  
+.titleQuiz { grid-area: titleQuiz; }
+  
+.usuario { grid-area: usuario; }
+  
+.contador { grid-area: contador; }
+  
+.tempo { grid-area: tempo; }
+  
+.QUIZ { 
+    grid-area: QUIZ; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleQuiz {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    animation: entre_vazio 3s ease-in-out;
+}
+
+@keyframes entre_vazio {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
