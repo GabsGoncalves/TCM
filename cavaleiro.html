@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Knight</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/cavaleiro.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+</head>
+
+<body>
+    <header>
+        <nav class="new-nav-bar">
+            <div class="new-logo">
+                <img src="assets/img/Hollow Icon.svg" alt="">
+            </div>
+            <div class="new-nav-list">
+                <ul id="ben10">
+                    <li class="new-nav-item"><a href="index.html" class="new-nav-link">Início</a></li>
+                    <li class="new-nav-item"><a href="cavaleiro.html" class="new-nav-link">O ferrão</a></li>
+                    <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Amuletos</a></li>
+                    <li class="new-nav-item"><a href="mapa.html" class="new-nav-link">Mapa interativo</a></li>
+                    <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Magias</a></li>
+                    <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Dark</a></li>
+                </ul>
+            </div>
+            <div class="new-login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+    
+            <div class="new-mobile-menu-icon">
+                <button onclick="menuShow()"><img class="new-icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="new-mobile-menu">
+            <ul id="ben10">
+                <li class="new-nav-item"><a href="index.html" class="new-nav-link">Início</a></li>
+                <li class="new-nav-item"><a href="cavaleiro.html" class="new-nav-link">O ferrão</a></li>
+                <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Amuletos</a></li>
+                <li class="new-nav-item"><a href="mapa.html" class="new-nav-link">Mapa interativo</a></li>
+                <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Magias</a></li>
+                <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Dark</a></li>
+            </ul>
+    
+            <div class="new-login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>  
+    <main>
+        <section id="estagiosFerrao">
+            <section id="ostres">
+                <div id="ferreiroDiv">
+                    <img id="ferreiro" src="assets/img_cavaleiro/ferreiro.webp" alt="">
+                </div>
+                <div id="osdois">
+                    <div id="title">
+                        <h1>O Ferreiro</h1>
+                    </div>
+                    <div id="textinho">
+                        <p>O responsável por forjar e refinar o seu ferrão é o Ferjador de Ferrões. Ele possui apenas
+                            dois sonhos: Forjar o mais puro e refinado ferrão e, ser atingido com um golpe letal pela
+                            lâmina forjada. Após forjar o ferrão perfeito, ele te pede para que você o golpeie... você
+                            será capaz de mata-lo? </p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="inicio">
+            <div class="ferraoCut">
+                <video class="ferraoCutImg" src="assets/video/animacaoFerreiro.mp4" autoplay muted loop></video>
+            </div>
+            <section id="ostres">
+                <div id="osdois">
+                    <div id="title">
+                        <h1>O Ferrão</h1>
+                    </div>
+                    <div id="textinho">
+                        <p>Durante a sua jornada em busca de respostas e encontrar a salvação de Hallownest, um ferrão
+                            desgastado e cego não é o suficiente para enfrentar seus inimigos. Por isso, encontramos o
+                            Forjador de Ferrões, um besouro que têm como único objetivo forjar o ferrão puro, um ferrão
+                            100% refinado e digno apenas de um Cavaleiro.</p>
+                    </div>
+                </div>
+                <div id="ferreiroDiv">
+                    <img id="ferreiro" src="assets/img_cavaleiro/ferreiro.webp" alt="">
+                </div>
+            </section>
+            <section id="todosEstagios">
+                <div onclick="mostrarFerrao(0, 'Ferrão Velho', 'Uma arma tradicional de Hallownest. Sua lâmina está cega devido ao tempo e ao desgaste.', 'Nenhum')"
+                    class="cardFerrao">
+                    <img src="assets/img_cavaleiro/ferraoVelho.webp" alt="" class="ferraoImg">
+                    <p class="titulo"></p>
+                    <p class="info"></p>
+                    <p class="custo"></p>
+                </div>
+                <div onclick="mostrarFerrao(1, 'Ferrão Afiado', 'Uma arma tradicional de Hallownest, restaurada a uma forma letal.', 'Geo: 250')"
+                    class="cardFerrao">
+                    <img src="assets/img_cavaleiro/ferraoAfiado.webp" alt="" class="ferraoImg">
+                    <p class="titulo"></p>
+                    <p class="info"></p>
+                    <p class="custo"></p>
+                </div>
+                <div onclick="mostrarFerrao(2, 'Ferrão Canalizado', 'Uma arma fendida de Hallownest. A lâmina é primorosamente balanceada.', 'Geo: 800 <br> Minério Pálido: 1')"
+                    class="cardFerrao">
+                    <img src="assets/img_cavaleiro/ferraoCanalizado.webp" alt="" class="ferraoImg">
+                    <p class="titulo"></p>
+                    <p class="info"></p>
+                    <p class="custo"></p>
+                </div>
+                <div onclick="mostrarFerrao(3, 'Ferrão Serpenteado', 'Uma poderosa arma de Hallownest, refinada como nenhuma outra.', 'Geo: 2000 <br> Minério Pálido: 2')"
+                    class="cardFerrao">
+                    <img src="assets/img_cavaleiro/ferraoSerpentedo.webp" alt="" class="ferraoImg">
+                    <p class="titulo"></p>
+                    <p class="info"></p>
+                    <p class="custo"></p>
+                </div>
+                <div onclick="mostrarFerrao(4, 'Ferrão Puro', 'A arma definitiva de Hallownest. Trabalhada à perfeição, esse ferrão antigo revela sua verdadeira forma.', 'Geo: 4000 <br> Minério Pálido: 3')"
+                    class="cardFerrao">
+                    <img src="assets/img_cavaleiro/ferraoPuro.webp" alt="" class="ferraoImg">
+                    <p class="titulo"></p>
+                    <p class="info"></p>
+                    <p class="custo"></p>
+                </div>
+            </section>
+        </section>
+        <section id="artes">
+            <section id="ostres">
+                <div id="ferreiroDiv">
+                    <img id="ferreiro2" src="assets/img_cavaleiro/Sly.webp" alt="">
+                </div>
+                <div id="osdois">
+                    <div id="title">
+                        <h1>Mestres e suas Artes do Ferrão</h1>
+                    </div>
+                    <div id="textinho">
+                        <p>Há um tempo atrás, existiam muitos Sábios e Mestres do Ferrão, porém, com a ruína de
+                            Hollownest, a quantidade dos gerreiros foi diminuindo cada vez mais. Agora, restam 3 Mestres
+                            e um Sábio do Ferrão. Sly, o Grande Sábio do Ferrão, Oro, Mato e Sheo, seus 3 discipulos que
+                            são irmãos</p>
+                    </div>
+                </div>
+            </section>
+            <div class="ferraoCut">
+                <video class="ferraoCutImg" src="assets/video/animacaoMestre.mp4" autoplay muted loop></video>
+            </div>
+        </section>
+        <div id="mestres">
+            <div class="mestres">
+                <div onclick="mestrePoggers(0)" class="Oro cardMestre">
+                    <div class="imgMestre"></div>
+                    <div class="arteIcon"><img class="iconArte" src="assets/img_cavaleiro/corteImpulsionado.webp"
+                            alt=""></div>
+                    <div class="infoMestre">
+                        <p class="mestreTexto">O mestre do ferrão Oro é um dos três Mestres do Ferrão. Ele vive na borda
+                            do reino, afastado e recluso de todos. Ele se afastou de seu Mestre e seus irmãos por conta
+                            de uma discussão.</p>
+                    </div>
+                </div>
+                <div class="divisor">
+                    <img src="assets/img_cavaleiro/Divisor.png" alt="">
+                    <img src="assets/img/carrossel_divisor_mobile.png" alt="">
+                </div>
+                <div onclick="mestrePoggers(1)" class="Mato cardMestre">
+                    <div class="imgMestre"></div>
+                    <div class="arteIcon"><img class="iconArte" src="assets/img_cavaleiro/corteCiclone.webp" alt="">
+                    </div>
+                    <div class="infoMestre">
+                        <p class="mestreTexto">O mestre do ferrão Mato é um dos três Mestres do Ferrão. Ele vive nos
+                            penhascos uivantes, afastado e recluso de todos. Mato guarda uma mágoa de seu irmão, Oro,
+                            por Oro dever a ele algo que ele nunca irá esquecer.</p>
+                    </div>
+                </div>
+                <div class="divisor2">
+                    <img src="assets/img_cavaleiro/Divisor.png" alt="">
+                    <img src="assets/img/carrossel_divisor_mobile.png" alt="">
+                </div>
+                <div onclick="mestrePoggers(2)" class="Sheo cardMestre">
+                    <div class="imgMestre"></div>
+                    <div class="arteIcon"><img class="iconArte" src="assets/img_cavaleiro/cortePoggers.webp" alt="">
+                    </div>
+                    <div class="infoMestre">
+                        <p class="mestreTexto">O mestre do ferrão Sheo é um dos três Mestres do Ferrão. Ele vive no
+                            Caminho Verde, afastado e recluso de todos. Sheo se redescobriu como um pintor, abandonando
+                            o ferrão diretamente e misturando suas técnicas e hábilidades de batalha com arte. Ele pinta
+                            junto do ferreiro, caso você não o mate...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slyContainer">
+                <div class="slyImg">
+                    <img src="assets/img_cavaleiro/slyBalanca.webp" alt="">
+                </div>
+                <div class="slyVideo">
+                    <button id="prevBtn"><i class="bi bi-arrow-left"></i></button>
+                    <div class="containerVideos">
+                        <video class="videoSly on" src="assets/video/slyComeco.mp4" autoplay muted loop></video>
+                        <video class="videoSly" src="assets/video/slyMeio.mp4" autoplay muted loop></video>
+                    </div>
+                    <button id="nextBtn"><i class="bi bi-arrow-right"></i></button>
+                </div>
+                <div class="texto">
+                    <p> Sly é o ultimo sábio do ferrão e um oponente muito poderoso. Sly possui habilidades de combate extremamente rápidas e fortes.<br>
+                        Ele foi quem ensinou os três irmãos as artes do ferrão. <br>
+                        Você consegue um amuleto com ele, Glória do Mestre do ferrão, que diminui significativamente o tempo de "carga" das artes do ferrão.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="assets/js/cavaleiro.js" defer></script>
+<script src="assets/js/App.js"></script>
+
+</html>
