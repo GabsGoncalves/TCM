@@ -58,7 +58,7 @@ body { cursor: url('data:image/x-icon;base64,AAACAAEAICAAAAQAAwCoEAAAFgAAACgAAAA
 }
 
 .new-nav-item {
-    margin: 0 15px;
+    margin: 0 7px;
 }
 
 .new-nav-link {
@@ -122,7 +122,18 @@ ol, ul {
     padding-left: 0;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1160px) {
+    ul#ben10 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    ul#ben10 li {
+        margin: 8px;
+    }
+}
+
+@media screen and (max-width: 750px) {
     .new-nav-bar {
         padding: 1.5rem 4rem;
     }
@@ -160,4 +171,96 @@ ol, ul {
     .new-open {
         display: block;
     }
+}
+
+#infosPerfil {
+    display: none;
+    box-sizing: border-box;
+}
+
+#infosPerfil ul, #infosPerfil li{
+    color: #fff;
+    list-style: none;
+    text-align: center;
+}
+
+#ulPerfil li:nth-of-type(2) {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+#ulPerfil a{
+    color: #000;
+}
+
+#ulPerfil li{
+    margin-top: 10px;
+}
+
+#voltar:hover {
+    background: #ffffff;
+    color: #000;
+    box-shadow: 0 0 5px #ffffff2d, 0 0 25px #ffffff2d, 0 0 50px #ffffff2d, 0 0 200px #ffffff2d;
+}
+
+#voltar {
+    border-radius: 25px;
+    background-color: transparent;
+    border: #fff solid;
+    padding: 15px;
+    color: #fff;
+    transition: ease 1s;
+}
+
+[data-animar] {
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+[data-animar-fast] {
+    transition: transform .2s ease, opacity .2s ease;
+}
+
+[data-animar-slow] {
+    transition: transform 1.5s ease, opacity 1.5s ease;
+}
+
+[data-animar="fade"],
+[data-animar-fast="fade"],
+[data-animar-slow="fade"] {
+    opacity: 0;
+}
+
+[data-animar="fade-down"],
+[data-animar-fast="fade-down"],
+[data-animar-slow="fade-down"] {
+    transform: translate3d(0px, 50px, 0px);
+    opacity: 0;
+}
+
+[data-animar="fade-up"],
+[data-animar-fast="fade-up"],
+[data-animar-slow="fade-up"] {
+    transform: translate3d(0px, -50px, 0px);
+    opacity: 0;
+}
+
+[data-animar="fade-right"],
+[data-animar-fast="fade-right"],
+[data-animar-slow="fade-right"] {
+    transform: translate3d(-50px, 0px, 0px);
+    opacity: 0;
+}
+
+[data-animar="fade-left"],
+[data-animar-fast="fade-left"],
+[data-animar-slow="fade-left"] {
+    transform: translate3d(50px, 0px, 0px);
+    opacity: 0;
+}
+
+/*o style da classe animado PRECISA ser o ultimo para sobrepor o style do data-animar*/
+.animado {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
 }

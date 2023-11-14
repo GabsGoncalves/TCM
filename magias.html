@@ -17,37 +17,52 @@
             </div>
             <div class="new-nav-list">
                 <ul id="ben10">
-                    <li class="new-nav-item"><a href="index.html" class="new-nav-link">Início</a></li>
-                    <li class="new-nav-item"><a href="cavaleiro.html" class="new-nav-link">O ferrão</a></li>
-                    <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Amuletos</a></li>
-                    <li class="new-nav-item"><a href="mapa.html" class="new-nav-link">Mapa interativo</a></li>
-                    <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Magias</a></li>
-                    <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Dark</a></li>
+                    <li class="new-nav-item"><a href="index.html" class="new-nav-link">Home</a></li>
+                    <li class="new-nav-item"><a href="galeriaCenarios.html" class="new-nav-link">Gallery</a></li>
+                    <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Charms</a></li>
+                    <li class="new-nav-item"><a href="dlc.html" class="new-nav-link">DLC</a></li>
+                    <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Spells</a></li>
+                    <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Born</a></li>
+                    <li class="new-nav-item"><a href="bossNormal.html" class="new-nav-link">Boss</a></li>
+                    <li class="new-nav-item"><a href="coliseu.html" class="new-nav-link">Colosseum</a></li>
+                    <li class="new-nav-item"><a href="sonhadores.html" class="new-nav-link">Dreamers</a></li>
+                    <li class="new-nav-item"><a href="silksong.html" class="new-nav-link">Silkson</a></li>
+                    <li class="new-nav-item"><a href="florDelicada.html" class="new-nav-link">Delicate Flower</a></li>
+                    <li class="new-nav-item"><a href="cavaleiro.html" class="new-nav-link">The Nail</a></li>
+                    <li class="new-nav-item"><a href="radiancia.html" class="new-nav-link">Radiance</a></li>
+                    <li class="new-nav-item"><a href="panteao.html" class="new-nav-link">Pantheon</a></li>
                 </ul>
             </div>
             <div class="new-login-button">
-                <button><a href="login.html">Entrar</a></button>
+                <button><a href="login.html">Login</a></button>
             </div>
-    
+
             <div class="new-mobile-menu-icon">
                 <button onclick="menuShow()"><img class="new-icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
             </div>
         </nav>
         <div class="new-mobile-menu">
             <ul id="ben10">
-                <li class="new-nav-item"><a href="index.html" class="new-nav-link">Início</a></li>
-                <li class="new-nav-item"><a href="cavaleiro.html" class="new-nav-link">O ferrão</a></li>
-                <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Amuletos</a></li>
-                <li class="new-nav-item"><a href="mapa.html" class="new-nav-link">Mapa interativo</a></li>
-                <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Magias</a></li>
-                <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Dark</a></li>
+                <li class="new-nav-item"><a href="index.html" class="new-nav-link">Home</a></li>
+                <li class="new-nav-item"><a href="galeriaCenarios.html" class="new-nav-link">Gallery</a></li>
+                <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Charms</a></li>
+                <li class="new-nav-item"><a href="dlc.html" class="new-nav-link">DLC</a></li>
+                <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Spells</a></li>
+                <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Born</a></li>
+                <li class="new-nav-item"><a href="bossNormal.html" class="new-nav-link">Boss</a></li>
+                <li class="new-nav-item"><a href="coliseu.html" class="new-nav-link">Colosseum</a></li>
+                <li class="new-nav-item"><a href="sonhadores.html" class="new-nav-link">Dreamers</a></li>
+                <li class="new-nav-item"><a href="silksong.html" class="new-nav-link">Silkson</a></li>
+                <li class="new-nav-item"><a href="florDelicada.html" class="new-nav-link">Delicate Flower</a></li>
+                <li class="new-nav-item"><a href="cavaleiro.html" class="new-nav-link">The Nail</a></li>
+                <li class="new-nav-item"><a href="radiancia.html" class="new-nav-link">Radiance</a></li>
+                <li class="new-nav-item"><a href="panteao.html" class="new-nav-link">Pantheon</a></li>
             </ul>
-    
             <div class="new-login-button">
-                <button><a href="login.html">Entrar</a></button>
+                <button><a href="login.html">Login</a></button>
             </div>
         </div>
-    </header>  
+    </header>
     <main>
         <section id="area">
             <section id="area_magia">
@@ -56,7 +71,7 @@
                         <div class="dentro" onclick="infoMagiaCompleto('espirito')">
                             <img src="assets/img_magias/fundo_magia.svg" alt="">
                         </div>
-                        <img onclick="upgradeMagia('espirito')" class="title" src="assets/img_magias/espirito_vingativo.svg" alt="">
+                        <img onclick="upgradeMagia('espirito', 0)" class="title" src="assets/img_magias/espirito_vingativo.svg" alt="">
                     </div>
                     <div class="info_magia" id="espirito">
                     </div>
@@ -66,7 +81,7 @@
                         <div class="dentro" onclick="infoMagiaCompleto('rasante')">
                             <img src="assets/img_magias/fundo_magia.svg" alt="">
                         </div>
-                        <img onclick="upgradeMagia('rasante')" class="title rasanteimg" src="assets/img_magias/rasante.svg" alt="">
+                        <img onclick="upgradeMagia('rasante', 1)" class="title rasanteimg" src="assets/img_magias/rasante.svg" alt="">
                     </div>
                     <div class="info_magia" id="rasante">
                     </div>
@@ -76,7 +91,7 @@
                         <div class="dentro" onclick="infoMagiaCompleto('uivantes')">
                             <img src="assets/img_magias/fundo_magia.svg" alt="">
                         </div>
-                        <img onclick="upgradeMagia('uivantes')" class="title uivantesimg" src="assets/img_magias/uivantes.svg" alt="">
+                        <img onclick="upgradeMagia('uivantes', 2)" class="title uivantesimg" src="assets/img_magias/uivantes.svg" alt="">
                     </div>
                     <div class="info_magia" id="uivantes">
                     </div>

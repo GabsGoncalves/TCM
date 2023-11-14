@@ -10,9 +10,9 @@ const mestreIMG = document.querySelectorAll('.imgMestre');
 const mestreTexto = document.querySelectorAll('.mestreTexto');
 const iconArte = document.querySelectorAll('.iconArte');
 const mestre = [
-{"video": "<video class='videoArte' src='assets/video/corteSeco.mp4' autoplay muted loop></video>", "imagem": "<img src='assets/img_cavaleiro/Oro.webp'>", "textinho": "Oro ensina a habilidade Corte Impulsionado, que consiste em um ataque que vai junto ao seu dash, e atacando a sua frente."},
-{"video": "<video class='videoArte' src='assets/video/corteCiclone.mp4' autoplay muted loop></video>", "imagem": "<img src='assets/img_cavaleiro/oro.gif'>", "textinho": "Mato ensina a habilidade Corte Ciclone, um ataque giratório que golpeia várias vezes."},
-{"video": "<video class='videoArte' src='assets/video/corteBrabo.mp4' autoplay muted loop></video>", "imagem": "<img src='assets/img_cavaleiro/Sheo.webp'>", "textinho": "Sheo ensina a habilidade Grande Corte, que é um ataque forte com o ferrão, mas não precisa usar o dash. Tem um alcance grande, atingindo até alvos um pouco mais altos.  Seu movimento e rastro do ataque lembra muito uma pincelada de tinta."}
+{"video": "<video class='videoArte' src='assets/video/mestres/corteSeco.mp4' autoplay muted loop></video>", "imagem": "<img src='assets/img_cavaleiro/Oro.webp'>", "textinho": "Oro teaches the ability of the Dash Slash, he is the only nailmaster that asks for Geo in exchange for teaching you the nail art.", "textoPadrao": "The Nailmaster Oro lives on the Kingdom's Edge, closed off from everyone. He distanced himself from his brothers and nailsage because of a fight with Mato."},
+{"video": "<video class='videoArte' src='assets/video/mestres/corteCiclone.mp4' autoplay muted loop></video>", "imagem": "<img src='assets/img_cavaleiro/oro.gif'>", "textinho": "Mato teaches the ability of the Cyclone Slash and says he is willing to share his abilities to the next generation of nail wielders.", "textoPadrao": "The Nailmaster Mato lives on the Howling Cliffs, closed off from everyone. Mato resents Oro for something and says Oro owes him something he will never forget."},
+{"video": "<video class='videoArte' src='assets/video/mestres/corteBrabo.mp4' autoplay muted loop></video>", "imagem": "<img src='assets/img_cavaleiro/Sheo.webp'>", "textinho": "Sheo teaches the ability of the Great Slash, he is said to be the strongest and mightiest amongst the three nailmasters.", "textoPadrao": "The Nailmaster Sheo lives on Greenpath, closed off from everyone. He decided to isolate himself to pursue a new art, the art of painting, sculpting, and creation of  various artworks. Later, he befriends and the Nailsmith (if you choose to spare the Nailsmith's life)"}
 ];
 
 const slider = document.querySelectorAll('.videoSly');
@@ -65,13 +65,12 @@ function mestrePoggers(id) {
     if (mestreAtivo !== -1) {
         iconArte[mestreAtivo].style.display = 'none';
         mestreIMG[mestreAtivo].innerHTML = mestre[mestreAtivo].imagem;
-        mestreTexto[mestreAtivo].innerHTML = mestreTexto[id].innerHTML;
+        mestreTexto[mestreAtivo].innerHTML = mestre[id].textoPadrao;
     }
-
+    mestreAtivo = id;
     iconArte[id].style.display = 'grid';
     mestreIMG[id].innerHTML = mestre[id].video;
     mestreTexto[id].innerHTML = mestre[id].textinho;
-    mestreAtivo = id;
 }
 
 function hideSlide() {

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -15,37 +17,52 @@
             </div>
             <div class="new-nav-list">
                 <ul id="ben10">
-                    <li class="new-nav-item"><a href="index.html" class="new-nav-link">Início</a></li>
-                    <li class="new-nav-item"><a href="cavaleiro.html" class="new-nav-link">O ferrão</a></li>
-                    <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Amuletos</a></li>
-                    <li class="new-nav-item"><a href="mapa.html" class="new-nav-link">Mapa interativo</a></li>
-                    <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Magias</a></li>
-                    <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Dark</a></li>
+                    <li class="new-nav-item"><a href="index.html" class="new-nav-link">Home</a></li>
+                    <li class="new-nav-item"><a href="galeriaCenarios.html" class="new-nav-link">Gallery</a></li>
+                    <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Charms</a></li>
+                    <li class="new-nav-item"><a href="dlc.html" class="new-nav-link">DLC</a></li>
+                    <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Spells</a></li>
+                    <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Born</a></li>
+                    <li class="new-nav-item"><a href="bossNormal.html" class="new-nav-link">Boss</a></li>
+                    <li class="new-nav-item"><a href="coliseu.html" class="new-nav-link">Colosseum</a></li>
+                    <li class="new-nav-item"><a href="sonhadores.html" class="new-nav-link">Dreamers</a></li>
+                    <li class="new-nav-item"><a href="silksong.html" class="new-nav-link">Silkson</a></li>
+                    <li class="new-nav-item"><a href="florDelicada.html" class="new-nav-link">Delicate Flower</a></li>
+                    <li class="new-nav-item"><a href="cavaleiro.html" class="new-nav-link">The Nail</a></li>
+                    <li class="new-nav-item"><a href="radiancia.html" class="new-nav-link">Radiance</a></li>
+                    <li class="new-nav-item"><a href="panteao.html" class="new-nav-link">Pantheon</a></li>
                 </ul>
             </div>
             <div class="new-login-button">
-                <button><a href="login.html">Entrar</a></button>
+                <button><a href="login.html">Login</a></button>
             </div>
-    
+
             <div class="new-mobile-menu-icon">
                 <button onclick="menuShow()"><img class="new-icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
             </div>
         </nav>
         <div class="new-mobile-menu">
             <ul id="ben10">
-                <li class="new-nav-item"><a href="index.html" class="new-nav-link">Início</a></li>
-                <li class="new-nav-item"><a href="cavaleiro.html" class="new-nav-link">O ferrão</a></li>
-                <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Amuletos</a></li>
-                <li class="new-nav-item"><a href="mapa.html" class="new-nav-link">Mapa interativo</a></li>
-                <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Magias</a></li>
-                <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Dark</a></li>
+                <li class="new-nav-item"><a href="index.html" class="new-nav-link">Home</a></li>
+                <li class="new-nav-item"><a href="galeriaCenarios.html" class="new-nav-link">Gallery</a></li>
+                <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Charms</a></li>
+                <li class="new-nav-item"><a href="dlc.html" class="new-nav-link">DLC</a></li>
+                <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Spells</a></li>
+                <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Born</a></li>
+                <li class="new-nav-item"><a href="bossNormal.html" class="new-nav-link">Boss</a></li>
+                <li class="new-nav-item"><a href="coliseu.html" class="new-nav-link">Colosseum</a></li>
+                <li class="new-nav-item"><a href="sonhadores.html" class="new-nav-link">Dreamers</a></li>
+                <li class="new-nav-item"><a href="silksong.html" class="new-nav-link">Silkson</a></li>
+                <li class="new-nav-item"><a href="florDelicada.html" class="new-nav-link">Delicate Flower</a></li>
+                <li class="new-nav-item"><a href="cavaleiro.html" class="new-nav-link">The Nail</a></li>
+                <li class="new-nav-item"><a href="radiancia.html" class="new-nav-link">Radiance</a></li>
+                <li class="new-nav-item"><a href="panteao.html" class="new-nav-link">Pantheon</a></li>
             </ul>
-    
             <div class="new-login-button">
-                <button><a href="login.html">Entrar</a></button>
+                <button><a href="login.html">Login</a></button>
             </div>
         </div>
-    </header>  
+    </header>
     <main>
         <section id="login">
             <div id="imagem_hollow">
@@ -54,17 +71,17 @@
             <div id="login_inputs">
                 <img id="titledesk" src="assets/img/image 1.svg" alt="Texto escrito na fonte de titulo de hollow knight 'Login'">
                 <img id="titlemobile" src="assets/img/login_title_mobile.webp" alt="Texto escrito na fonte de titulo de hollow knight 'Login'">
-                <form id="dados_login">
+                <form action="cadastro.php" method="POST" id="dados_login">
                     <label for="nome"></label>
                     <input type="text" class="inputs" name="nome" size="50" placeholder="Insira seu Username" required>
                     <label for="email"></label>
                     <input type="email" class="inputs" name="username" size="50" placeholder="Insira seu Email" required>
                     <label for="senha"></label>
                     <input type="password" class="inputs" name="password" size="50" placeholder="Insira sua senha" required>
-                    <input type="submit" name="submit" id="Entrar" value="Cadastrar">
+                    <input type="submit" name="submit" id="Entrar" value="Register">
                 </form>
                 <br>
-                <p id="nãoPossui">Já possui uma conta?<a href="login.html"><b>ENTRE</b></a></p>
+                <p id="nãoPossui">Have an account?<a href="login.php"><b>LOGIN</b></a></p>
             </div>
         </section>
     </main>

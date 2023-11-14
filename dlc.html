@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Knight</title>
+    <link rel="stylesheet" href="assets/css/dlc.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+</head>
+
+<body>
+    <header>
+        <nav class="new-nav-bar">
+            <div class="new-logo">
+                <img src="assets/img/Hollow Icon.svg" alt="">
+            </div>
+            <div class="new-nav-list">
+                <ul id="ben10">
+                    <li class="new-nav-item"><a href="index.html" class="new-nav-link">Home</a></li>
+                    <li class="new-nav-item"><a href="galeriaCenarios.html" class="new-nav-link">Gallery</a></li>
+                    <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Charms</a></li>
+                    <li class="new-nav-item"><a href="dlc.html" class="new-nav-link">DLC</a></li>
+                    <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Spells</a></li>
+                    <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Born</a></li>
+                    <li class="new-nav-item"><a href="bossNormal.html" class="new-nav-link">Boss</a></li>
+                    <li class="new-nav-item"><a href="coliseu.html" class="new-nav-link">Colosseum</a></li>
+                    <li class="new-nav-item"><a href="sonhadores.html" class="new-nav-link">Dreamers</a></li>
+                    <li class="new-nav-item"><a href="silksong.html" class="new-nav-link">Silkson</a></li>
+                    <li class="new-nav-item"><a href="florDelicada.html" class="new-nav-link">Delicate Flower</a></li>
+                    <li class="new-nav-item"><a href="cavaleiro.html" class="new-nav-link">The Nail</a></li>
+                    <li class="new-nav-item"><a href="radiancia.html" class="new-nav-link">Radiance</a></li>
+                    <li class="new-nav-item"><a href="panteao.html" class="new-nav-link">Pantheon</a></li>
+                </ul>
+            </div>
+            <div class="new-login-button">
+                <button><a href="login.html">Login</a></button>
+            </div>
+
+            <div class="new-mobile-menu-icon">
+                <button onclick="menuShow()"><img class="new-icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="new-mobile-menu">
+            <ul id="ben10">
+                <li class="new-nav-item"><a href="index.html" class="new-nav-link">Home</a></li>
+                <li class="new-nav-item"><a href="galeriaCenarios.html" class="new-nav-link">Gallery</a></li>
+                <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Charms</a></li>
+                <li class="new-nav-item"><a href="dlc.html" class="new-nav-link">DLC</a></li>
+                <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Spells</a></li>
+                <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Born</a></li>
+                <li class="new-nav-item"><a href="bossNormal.html" class="new-nav-link">Boss</a></li>
+                <li class="new-nav-item"><a href="coliseu.html" class="new-nav-link">Colosseum</a></li>
+                <li class="new-nav-item"><a href="sonhadores.html" class="new-nav-link">Dreamers</a></li>
+                <li class="new-nav-item"><a href="silksong.html" class="new-nav-link">Silkson</a></li>
+                <li class="new-nav-item"><a href="florDelicada.html" class="new-nav-link">Delicate Flower</a></li>
+                <li class="new-nav-item"><a href="cavaleiro.html" class="new-nav-link">The Nail</a></li>
+                <li class="new-nav-item"><a href="radiancia.html" class="new-nav-link">Radiance</a></li>
+                <li class="new-nav-item"><a href="panteao.html" class="new-nav-link">Pantheon</a></li>
+            </ul>
+            <div class="new-login-button">
+                <button><a href="login.html">Login</a></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <video class="bg_video" src="assets/video/dlc/padrao.mp4" autoplay muted loop></video>
+        <video class="bg_video" src="assets/video/dlc/Grimm.mp4" autoplay muted loop></video>
+        <video class="bg_video" src="assets/video/dlc/sonhosEscondidos.mp4" autoplay muted loop></video>
+        <video class="bg_video" src="assets/video/dlc/sangueVital.mp4" autoplay muted loop></video>
+        <video class="bg_video" src="assets/video/dlc/godMaster.mp4" autoplay muted loop></video>
+        <video class="bg_video" src="assets/video/dlc/paleCourt.mp4" autoplay muted loop></video>
+
+        <section class="wrapper">
+            <section class="container">
+                <div onmouseover="trocarFundo(1)" class="card">
+                    <img src="assets/img_dlc/cardGrimm.webp" alt="">
+                    <div class="info">
+                        <h3>The Grimm's Troupe</h3>
+                        <p> Shadows dream of endless fire, Flames devour and embers swoop, One will light the Nightmare
+                            Lantern, Call and serve in Grimm's dread Troupe.</p>
+                        <a href="dlcDetails.html?card=Grimm">See More</a>
+                    </div>
+                </div>
+                <div onmouseover="trocarFundo(2)" class="card">
+                    <img src="assets/img_dlc/cardSonhos.webp" alt="">
+                    <div class="info">
+                        <h3>Hidden Dreams</h3>
+                        <p>Hidden Dreams is the first DLC for Hollow Knight, and it's a free expansion. It plays a
+                            significant role in the story.</p>
+                        <a href="dlcDetails.html?card=Sonho">See More</a>
+                    </div>
+                </div>
+                <div onmouseover="trocarFundo(3)" class="card">
+                    <img src="assets/img_dlc/cardSangue.webp" alt="">
+                    <div class="info">
+                        <h3>Life Blood</h3>
+                        <p>The DLC brought a variety of elements, both mechanical and visual. It also included new
+                            bosses and new adventures.</p>
+                        <a href="dlcDetails.html?card=Sangue">See More</a>
+                    </div>
+                </div>
+                <div onmouseover="trocarFundo(4)" class="card">
+                    <img src="assets/img_dlc/cardGod.webp" alt="">
+                    <div class="info">
+                        <h3>God Master</h3>
+                        <p>The DLC added the pantheons mechanic, new missions, new enemies, new endings, new NPCs, and
+                            environmental changes to the game. Without a doubt, it is the most important expansion pack.
+                        </p>
+                        <a href="dlcDetails.html?card=God">See More</a>
+                    </div>
+                </div>
+                <div onmouseover="trocarFundo(5)" class="card">
+                    <img src="assets/img_dlc/cardPale.jpg" alt="">
+                    <div class="info">
+                        <h3></h3>
+                        <p></p>
+                        <a href="paleCourt.html">See More</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+<script src="assets/js/App.js"></script>
+<script src="assets/js/dlc.js"></script>
+
+</html>
