@@ -146,7 +146,7 @@ p {
     to {opacity: 1;}
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 770px) {
 
     #bg_video {
         position: absolute;
