@@ -1,0 +1,63 @@
+main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image: url(../img_perfil/perfilBG.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    overflow: hidden;
+}
+
+section#container {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 70%;
+    padding: 25px;
+    background: rgba(168, 168, 168, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    gap: 4rem;
+}
+
+.cloth {
+    display: grid;
+    place-items: center;
+    flex: 40%;
+}
+
+.perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    flex: 60%;
+}
+
+.perfil img {
+    width: 170px;
+}
+
+.perfil button {
+    border: none;
+    border-radius: 1rem;
+    padding: 10px;
+    font-weight: 700;
+    background-color: #c0c0c0;
+}
+
+@media screen and (max-width: 940px) {
+    .cloth{
+        display: none;
+    }
+
+    .separator {
+        display: none;
+    }
+}

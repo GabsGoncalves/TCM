@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Trajan;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 2%, rgba(11,11,24,1) 33%, rgba(11,10,29,1) 69%, rgba(0,0,0,1) 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+}
+
+section:nth-of-type(2) {
+<<<<<<< HEAD
+    background-image: url(../img_dark/pilha_corpos_abismo.webp);
+=======
+    background-image: url(../assets/img_dark/pilha_corpos_abismo.webp);
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
+    height: 850px;
+}
+
+section:nth-of-type(4) {
+<<<<<<< HEAD
+    background-image: url(../img_dark/parente_perdido.webp);
+=======
+    background-image: url(../assets/img_dark/parente_perdido.webp);
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
+    height: 850px;
+}
+
+section:nth-of-type(6) {
+<<<<<<< HEAD
+    background-image: url(../img_dark/cavaleiro_vazio_acorrentado.webp);
+=======
+    background-image: url(../assets/img_dark/cavaleiro_vazio_acorrentado.webp);
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
+    height: 850px;
+}
+
+section:nth-of-type(8) {
+<<<<<<< HEAD
+    background-image: url(../img_dark/sofrimento.webp);
+=======
+    background-image: url(../assets/img_dark/sofrimento.webp);
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
+    height: 850px;
+}
+
+section:nth-of-type(10) {
+<<<<<<< HEAD
+    background-image: url(../img_dark/superhollow.webp);
+=======
+    background-image: url(../assets/img_dark/superhollow.webp);
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
+    height: 850px;
+}
+
+section:nth-of-type(12) {
+<<<<<<< HEAD
+    background-image: url(../img_dark/olha_para_traz.webp);
+=======
+    background-image: url(../assets/img_dark/olha_para_traz.webp);
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
+    height: 850px;
+}
+
+section:nth-of-type(14) {
+<<<<<<< HEAD
+    background-image: url(../img_dark/batalha_todo_fudido.webp);
+=======
+    background-image: url(../assets/img_dark/batalha_todo_fudido.webp);
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
+    height: 850px;
+}
+
+section:nth-of-type(16) {
+<<<<<<< HEAD
+    background-image: url(../img_dark/batalha_nao_fudido.webp);
+=======
+    background-image: url(../assets/img_dark/batalha_nao_fudido.webp);
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
+    height: 850px;
+}
+
+section:nth-of-type(18) {
+<<<<<<< HEAD
+    background-image: url(../img_dark/luz_ofuscante.webp);
+=======
+    background-image: url(../assets/img_dark/luz_ofuscante.webp);
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
+    height: 850px;
+}
+
+section:nth-of-type(20) {
+<<<<<<< HEAD
+    background-image: url(../img_dark/superhollow.webp);
+=======
+    background-image: url(../assets/img_dark/superhollow.webp);
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
+    height: 850px;
+}
+
+section:nth-of-type(22) {
+<<<<<<< HEAD
+    background-image: url(../img_dark/superhollow_zoom.webp);
+=======
+    background-image: url(../assets/img_dark/superhollow_zoom.webp);
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
+    height: 850px;
+}
+
+@media screen and (max-width: 540px) {
+    
+    section:nth-of-type(4) {
+<<<<<<< HEAD
+        background-image: url(../img_dark/parente_perdido_mobile.webp);
+=======
+        background-image: url(../assets/img_dark/parente_perdido_mobile.webp);
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
+        height: 850px;
+    }
+    
+    section:nth-of-type(8) {
+<<<<<<< HEAD
+        background-image: url(../img_dark/sofrimento_mobile.webp);
+=======
+        background-image: url(../assets/img_dark/sofrimento_mobile.webp);
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
+        height: 850px;
+    }
+    
+    section:nth-of-type(14) {
+<<<<<<< HEAD
+        background-image: url(../img_dark/batalha_todo_fudido_mobile.webp);
+=======
+        background-image: url(../assets/img_dark/batalha_todo_fudido_mobile.webp);
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
+        height: 850px;
+    }
+    
+    section:nth-of-type(16) {
+<<<<<<< HEAD
+        background-image: url(../img_dark/batalha_nao_fudido_mobile.webp);
+=======
+        background-image: url(../assets/img_dark/batalha_nao_fudido_mobile.webp);
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
+        height: 850px;
+    }
+    
+    section:nth-of-type(18) {
+<<<<<<< HEAD
+        background-image: url(../img_dark/luz_ofuscante_mobile.webp);
+=======
+        background-image: url(../assets/img_dark/luz_ofuscante_mobile.webp);
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
+        height: 850px;
+    }
+}
