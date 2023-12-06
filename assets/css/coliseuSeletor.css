@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-image: url(../img_boss/colosseumBG.webp);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5rem;
+    width: 90%;
+}
+
+section > div {
+    display: grid;
+    place-items: center;
+}
+
+section > div > h1 {
+    color: #5f9af8;
+    font-weight: 500;
+    transition: all .3s ease;
+    text-align: center;
+}
+
+section > div > h1:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 790px) {
+    main {
+        height: 100%;
+    }
+    main > section {
+        flex-direction: column;
+        margin: 10%;
+    }
+}

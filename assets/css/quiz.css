@@ -1,0 +1,246 @@
+::-webkit-scrollbar {
+    /*Trilho */
+    width: 10px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 2%, rgba(11, 11, 24, 1) 33%, rgba(11, 10, 29, 1) 69%, rgba(0, 0, 0, 1) 100%);
+}
+
+::-webkit-scrollbar-thumb {
+    /* Rolagem */
+    background: #c0c0c0;
+    border-radius: 10px;
+}
+
+@font-face {
+    font-family: 'Trajan';
+    src: url(trajan.ttf) format('opentype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Trajan;
+    color: black;
+}
+
+html {
+    height: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 2%, rgba(11, 11, 24, 1) 33%, rgba(11, 10, 29, 1) 69%, rgba(0, 0, 0, 1) 100%);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 0.6fr 2fr 0.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titleQuiz . tempo"
+        "QUIZ QUIZ QUIZ"
+        "usuario . contador";
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 2%, rgba(11, 11, 24, 1) 33%, rgba(11, 10, 29, 1) 69%, rgba(0, 0, 0, 1) 100%);
+}
+
+@media screen and (max-width: 540px) {
+    div.tempo {
+        display: none;
+    }
+
+    div.titleQuiz {
+        margin-left: .8rem;
+    }
+}
+
+.titleQuiz {
+    grid-area: titleQuiz;
+    display: grid;
+    place-items: center;
+}
+
+.usuario {
+    grid-area: usuario;
+    display: grid;
+    place-items: center;
+    border-radius: 1.8125rem;
+    color: #fff;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.contador {
+    grid-area: contador;
+    display: grid;
+    place-items: center;
+    border-radius: 1.8125rem;
+    color: #fff;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.tempo {
+    grid-area: tempo;
+    display: grid;
+    place-items: center;
+}
+
+.QUIZ {
+    grid-area: QUIZ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.QUIZ #pergunta {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+#areaImagem {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+img#imagemQuiz {
+    width: 17%;
+}
+
+.titleQuiz {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    animation: entre_vazio 3s ease-in-out;
+    width: 1px;
+}
+
+@keyframes entre_vazio {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+form,
+label {
+    color: #fff;
+}
+
+.inputsArea {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 2rem;
+}
+
+input[type=radio] {
+    accent-color: rgb(158, 158, 158);
+}
+
+
+#Area {
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 3rem;
+}
+
+#comecar,
+#avancar,
+#finalizar,
+#voltar {
+    border-radius: 25px;
+    background-color: transparent;
+    border: #fff solid;
+    padding: 15px;
+    color: #fff;
+    transition: ease 1s;
+}
+
+#comecar:hover,
+#avancar:hover,
+#finalizar:hover,
+#voltar:hover {
+    background: #ffffff;
+    color: #000;
+    box-shadow: 0 0 5px #ffffff2d, 0 0 25px #ffffff2d, 0 0 50px #ffffff2d, 0 0 200px #ffffff2d;
+}
+
+#avancar {
+    display: none;
+}
+
+.inputs {
+    width: 20px;
+    display: none;
+}
+
+#Resultado {
+    display: none;
+    grid-area: QUIZ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#voltar {
+    margin-top: 15px;
+}
+
+#Resultado h1, #voltar {
+    color: #fff;
+    text-align: center;
+}
+
+#formQuiz {
+    display: none;
+}
+
+#infosPerfil {
+    display: none;
+    box-sizing: border-box;
+}
+
+#infosPerfil ul, #infosPerfil li{
+    color: #fff;
+    list-style: none;
+    text-align: center;
+}
+
+#ulPerfil li:nth-of-type(2) {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+#ulPerfil a{
+    color: #000;
+}
+
+.new-login-button {
+    display: grid;
+    place-items: center;
+}
+
+#ulPerfil li{
+    margin-top: 10px;
+}
+
+#Direita, #Esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+main {
+    background-image: url(../img/bgGod.webp);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+div#title {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+div#title img {
+    width: 40%;
+}
+
+div.boss {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+div.boss img {
+    width: 35%;
+}
+
+div.boss p {
+    color: #fff;
+}
+
+div#container {
+    display: grid;
+    place-items: center;
+    margin-bottom: 10rem;
+}
+
+#containerBoss h1, h2 {
+    color: #fff;
+    text-align: center;
+}
+
+main>#botao {
+    position: fixed;
+    z-index: 9999;
+    bottom: 50px;
+    right: 4rem;
+}
+
+#botao {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
+}
+
+main>#botao:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+main>#botao:active {
+    transform: scale(0.9);
+}
+
+div#containerBoss {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 40px;
+}
+
+@media screen and (max-width: 790px) {
+    div#abrir,
+    div#fechar {
+        display: grid;
+        place-items: center;
+    }
+
+    div#abrir img,
+    div#fechar img {
+        width: 90%;
+    }
+
+    div#title img {
+        width: 100%;
+    }
+
+    div.boss {
+        flex-direction: column;
+    }
+
+    div.boss img {
+        width: 100%;
+    }
+}
