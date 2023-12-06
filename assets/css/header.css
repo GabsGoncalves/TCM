@@ -16,7 +16,15 @@
 
 .footer-powered-by {
     display: none;
-}  
+}
+
+.dropdown:hover img {
+    transform: rotate(180deg);
+}
+
+.dropdown {
+    transition: all .2s ease;
+}
   
 * {
     padding: 0;
