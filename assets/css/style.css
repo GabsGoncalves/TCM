@@ -121,8 +121,8 @@ main {
     animation: entre_vazio 3s ease-in-out;
 }
 
-#entre_vazio_mobile {
-    display: none;
+#entre_vazio_desk img {
+    width: 75%;
 }
 
 .texto_1 {
@@ -151,22 +151,6 @@ p {
     #bg_video {
         position: absolute;
         margin-top: 4rem;
-    }
-
-    #entre_vazio_desk {
-        display: none;
-    }
-
-    #entre_vazio_mobile {
-        display: block;
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        animation: entre_vazio 3s ease-in-out;
     }
 
     .carrossel_item_mobile {
@@ -206,4 +190,11 @@ p {
         display: none;
     }
 
+    #entre_vazio_desk {
+        width: 100%;
+    }
+
+    #entre_vazio_desk img {
+        width: 90%;
+    }
 }

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,112 +12,154 @@
 </head>
 
 <body>
-    <header>
-        <nav class="new-nav-bar">
-            <div class="new-logo">
-                <img src="assets/img/Hollow Icon.svg" alt="">
-            </div>
-            <div class="new-nav-list">
-                <ul id="ben10">
-                    <li class="new-nav-item"><a href="index.html" class="new-nav-link">Início</a></li>
-                    <li class="new-nav-item"><a href="seletor_perso.html" class="new-nav-link">Personagens</a></li>
-                    <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Amuletos</a></li>
-                    <li class="new-nav-item"><a href="mapa.html" class="new-nav-link">Mapa interativo</a></li>
-                    <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Magias</a></li>
-                    <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Dark</a></li>
-                </ul>
-            </div>
-            <div class="new-login-button">
-                <button><a href="login.html">Entrar</a></button>
-            </div>
-
-            <div class="new-mobile-menu-icon">
-                <button onclick="menuShow()"><img class="new-icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
-            </div>
-        </nav>
-        <div class="new-mobile-menu">
-            <ul id="ben10">
-                <li class="new-nav-item"><a href="index.html" class="new-nav-link">Início</a></li>
-                <li class="new-nav-item"><a href="seletor_perso.html" class="new-nav-link">Personagens</a></li>
-                <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Amuletos</a></li>
-                <li class="new-nav-item"><a href="mapa.html" class="new-nav-link">Mapa interativo</a></li>
-                <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Magias</a></li>
-                <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Dark</a></li>
-            </ul>
-
-            <div class="new-login-button">
-                <button><a href="login.html">Entrar</a></button>
-            </div>
-        </div>
-    </header>
+    
+                        <header>
+                        <nav class="new-nav-bar">
+                            <div class="new-logo">
+                                <img src="assets/img/Hollow_Icon.svg" alt="">
+                            </div>
+                            <div class="new-nav-list">
+                                <ul class="ben10">
+                                    <li class="new-nav-item"><a href="index.html" class="new-nav-link">Home</a></li>
+                                    <li id="knight" class="new-nav-item new-nav-link dropdown">Knight <img class="caretKnight" src="assets/img/caret-down-fill.svg" alt="">
+                                        <div class="dropdown-menu knight">
+                                            <a href="amuletos.html" class="new-nav-link">Charms</a>
+                                            <a href="cavaleiro.html" class="new-nav-link">The Nail</a>
+                                            <a href="magias.html" class="new-nav-link">Spells</a>
+                                            <a href="dark.html" class="new-nav-link">Born</a>
+                                            <a href="energias.html" class="new-nav-link">Energys</a>
+                                        </div>
+                                    </li>
+                                    <li id="battle" class="new-nav-item new-nav-link dropdown">Battle <img class="caretBattle" src="assets/img/caret-down-fill.svg" alt="">
+                                        <div class="dropdown-menu battle">
+                                            <a href="coliseu.html" class="new-nav-link">Colosseum</a>
+                                            <a href="panteao.html" class="new-nav-link">Pantheon</a>
+                                            <a href="radiancia.html" class="new-nav-link">Radiance</a>
+                                        </div>
+                                    </li>
+                                    <li id="gallery" class="new-nav-item new-nav-link dropdown">Gallery <img class="caretGallery" src="assets/img/caret-down-fill.svg" alt="">
+                                        <div class="dropdown-menu gallery">
+                                            <a href="dark.html" class="new-nav-link">Born</a>
+                                            <a href="galeriaCenarios.html" class="new-nav-link">Scenes</a>
+                                        </div>
+                                    </li>
+                                    <li class="new-nav-item"><a href="dlc.html" class="new-nav-link">DLC</a></li>
+                                    <li class="new-nav-item"><a href="sonhadores.html" class="new-nav-link">Dreamers</a></li>
+                                    <li class="new-nav-item"><a href="silksong.html" class="new-nav-link">Silksong</a></li>
+                                    <li class="new-nav-item"><a href="florDelicada.html" class="new-nav-link">Delicate Flower</a></li>
+                                    <li class="new-nav-item"><a href="quiz.html" class="new-nav-link">Quiz</a></li>
+                                </ul>
+                            </div>
+                            <div class="new-login-button">
+                                <button onclick="link('login.html')">Login</button>
+                            </div>
+                
+                            <div class="new-mobile-menu-icon">
+                                <button onclick="menuShow()"><img class="new-icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+                            </div>
+                        </nav>
+                        <div class="new-mobile-menu">
+                            <ul class="ben10">
+                                <li class="new-nav-item"><a href="index.html" class="new-nav-link">Home</a></li>
+                                <li id="knightMobile" class="new-nav-item new-nav-link dropdown">Knight <img class="caretKnight" src="assets/img/caret-down-fill.svg" alt="">
+                                    <div class="dropdown-menu knightMobile">
+                                        <a href="amuletos.html" class="new-nav-link">Charms</a>
+                                        <a href="cavaleiro.html" class="new-nav-link">The Nail</a>
+                                        <a href="magias.html" class="new-nav-link">Spells</a>
+                                        <a href="dark.html" class="new-nav-link">Born</a>
+                                        <a href="energias.html" class="new-nav-link">Energys</a>
+                                    </div>
+                                </li>
+                                <li id="battleMobile" class="new-nav-item new-nav-link dropdown">Battle <img class="caretBattle" src="assets/img/caret-down-fill.svg" alt="">
+                                    <div class="dropdown-menu battleMobile">
+                                        <a href="coliseu.html" class="new-nav-link">Colosseum</a>
+                                        <a href="panteao.html" class="new-nav-link">Pantheon</a>
+                                        <a href="radiancia.html" class="new-nav-link">Radiance</a>
+                                    </div>
+                                </li>
+                                <li id="galleryMobile" class="new-nav-item new-nav-link dropdown">Gallery <img class="caretGallery" src="assets/img/caret-down-fill.svg" alt="">
+                                    <div class="dropdown-menu galleryMobile">
+                                        <a href="dark.html" class="new-nav-link">Born</a>
+                                        <a href="galeriaCenarios.html" class="new-nav-link">Scenes</a>
+                                    </div>
+                                </li>
+                                <li class="new-nav-item"><a href="dlc.html" class="new-nav-link">DLC</a></li>
+                                <li class="new-nav-item"><a href="sonhadores.html" class="new-nav-link">Dreamers</a></li>
+                                <li class="new-nav-item"><a href="silksong.html" class="new-nav-link">Silksong</a></li>
+                                <li class="new-nav-item"><a href="florDelicada.html" class="new-nav-link">Delicate Flower</a></li>
+                                <li class="new-nav-item"><a href="quiz.html" class="new-nav-link">Quiz</a></li>
+                            </ul>
+                            <div class="new-login-button">
+                                <button onclick="link('login.html')">Login</button>
+                            </div>
+                        </div>
+                    </header>
+    
     <main>
         <div id="div_title_amuletos_desk">
-            <img id="title_amuletos_desk" src="assets/img_amuletos/amuletos_title_desk.svg" alt="">
-        </div>
-        <div id="div_title_amuletos_mobile">
-            <img id="title_amuletos_mobile" src="assets/img/amuletos_title_mobile.svg" alt="">
+            <img id="title_amuletos_desk" src="assets/img_amuletos/charmsTtitle.webp" alt="">
         </div>
         <section id="area">
             <section id="info_amuleto_mobile">
                 <h2 id="nome_amuleto_mobile"></h2>
-                <img id="cardImagem_mobile" src="">
+                <img id="cardImagem_mobile" src="" alt=""><!-- É PREENCHIDO COM JAVASCRIPT -->
                 <p id="cardInfo_mobile"></p>
                 <p id="cardInfo2_mobile"></p>
             </section>
             <section id="amuletos">
                 <div id="linha1">
-                    <div class="amuletinho" onmouseover="infosAmuleto('Bussola Caprichosa', 'Sussura sua localização ao portador sempre que o mapa estiver aberto, permitindo que os aventureiros identifiquem sua localização atual', 'Um dos amuletos mais úteis do jogo... Até você decorar o mapa.', 'assets/img_amuletos/cardAmuleto.svg')"><img src="assets/img_amuletos/bussola.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Enxame de Colecionadores', 'Um exame seguira o portador que coletará quaisquer Geo deixado no chão.', 'Útil para aqueles que não conseguem deixar nada para trás, por mais insignificante que seja.', 'assets/img_amuletos/cardAmuleto_enxame.svg')"><img src="assets/img_amuletos/enxame.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Carapaça de Robusta', 'Aumenta a resistência. Ao se recuperar de danos, o portador permanecerá ivulnerável por mais tempo.', 'Facilita a fuga de situações perigosas', 'assets/img_amuletos/cardAmuleto3.svg')"><img src="assets/img_amuletos/carapaca.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Apanhador de Almas', 'Usado pelos xamãs para atrair mais ALMA do mundo ao seu redor.', 'Aumenta a quantidade de ALMA recebida quando um oponente é atingido com o ferrão.', 'assets/img_amuletos/cardAmuleto4.svg')"><img src="assets/img_amuletos/apanhador.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Pedra do Xamã', 'Diz-se que contém o conhecimento das gerações passadas dos xamãs.', 'Aumenta o poder das magias, causando dano aos oponentes.', 'assets/img_amuletos/cardAmuleto5.svg')"><img src="assets/img_amuletos/xama.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Devorador de Almas', 'Artefato xamã esquecido, usaado para extrair ALMA de criaturas ainda vivas.', 'Aumenta consideravelmente a quantidade de ALMA recebida quando um oponente é atingido com o ferrão.', 'assets/img_amuletos/cardAmuleto6.svg')"><img src="assets/img_amuletos/Soul_Eater 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Mestre da Esquiva', 'Se assemelha à um inseto excêntrico conhecido apenas como O Mestre das Esquivas.', 'O portador será capaz de essquivar mais frequentemente, bem como esquivar para baixo. Perfeito para aqueles que querem se mover o mais rápido possível.', 'assets/img_amuletos/cardAmuleto7.svg')"><img src="assets/img_amuletos/Dashmaster 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Mestre da Corrida', 'Toma a semelhança de um inseto estranho conhecido apenas como O Mestre da Corrida.', 'Aumenta a velocidade do portador, permitindo que ele evite perigos ou supere rivais.', 'assets/img_amuletos/cardAmuleto8.svg')"><img src="assets/img_amuletos/Sprintmaster 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Canção das Larvas', 'Contém a gratidão de larvas que foram salvas.', 'Recebe ALMA sempre que dano for recebido.', 'assets/img_amuletos/cardAmuleto9.svg')"><img src="assets/img_amuletos/Grubsong 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Elegia da Larvamosca', 'Contém a poesia das larvas que evoluíram para o próximo estágio de suas vidas. Infunde armas com uma energia sagrada', 'Quando o portador está com a vida cheia, ele lançará feixes de energia branca através de seu ferrão.', 'assets/img_amuletos/cardAmuleto90.svg')"><img src="assets/img_amuletos/elergia_larvamosca.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Wandering Compass', 'Whispers your location to the bearer whenever the map is open, allowing adventurers to identify their current location.', 'One of the most useful amulets in the game... Until you memorize the map.', 'assets/img_amuletos/cardAmuleto.svg')"><img src="assets/img_amuletos/bussola.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Collectors Swarm', 'A sprite will follow the bearer, collecting any Geo left on the ground.', 'Useful for those who cant leave anything behind, no matter how insignificant.', 'assets/img_amuletos/cardAmuleto_enxame.svg')"><img src="assets/img_amuletos/enxame.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Robust Shell', 'Increases resistance. When recovering from damage, the bearer will remain invulnerable for a longer period.', 'Facilitates escaping from dangerous situations.', 'assets/img_amuletos/cardAmuleto3.svg')"><img src="assets/img_amuletos/carapaca.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Soul Catcher', 'Used by shamans to draw more SOUL from the world around them.', 'Increases the amount of SOUL received when an opponent is hit with the stinger.', 'assets/img_amuletos/cardAmuleto4.svg')"><img src="assets/img_amuletos/apanhador.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Shamans Stone', 'Said to contain the knowledge of past shamanic generations.', 'Increases the power of spells, causing damage to opponents.', 'assets/img_amuletos/cardAmuleto5.svg')"><img src="assets/img_amuletos/xama.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Soul Devourer', 'Forgotten shamanic artifact, used to extract SOUL from still-living creatures.', 'Significantly increases the amount of SOUL received when an opponent is hit with the stinger.', 'assets/img_amuletos/cardAmuleto6.svg')"><img src="assets/img_amuletos/Soul_Eater1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Dodge Master', 'Resembles an eccentric insect known only as The Dodge Master.', 'The bearer will be able to dodge more frequently, as well as dodge downward. Perfect for those who want to move as fast as possible.', 'assets/img_amuletos/cardAmuleto7.svg')"><img src="assets/img_amuletos/Dashmaster1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Race Master', 'Takes the likeness of a strange insect known only as The Race Master.', 'Increases the bearers speed, allowing them to avoid dangers or outpace rivals.', 'assets/img_amuletos/cardAmuleto8.svg')"><img src="assets/img_amuletos/Sprintmaster1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Song of Larvae', 'Contains the gratitude of saved grubs.', 'Receives SOUL whenever damage is taken.', 'assets/img_amuletos/cardAmuleto9.svg')"><img src="assets/img_amuletos/Grubsong1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Elegy of the Lumafly', 'Contains the poetry of grubs that have evolved to the next stage of their lives. Infuses weapons with sacred energy.', 'When the bearer is at full health, they will release beams of white energy through their stinger.', 'assets/img_amuletos/cardAmuleto90.svg')"><img src="assets/img_amuletos/elergia_larvamosca.svg" alt=""></div>
                 </div>
                 <div id="linha2">
                     <div class="espacinho"></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Coração Frágil', 'Aumenta a vida do portador, permitindo-lhe sofrer mais dano.', 'Este amuleto é frágil, porém você pode deixa-lo inquebrável.', 'assets/img_amuletos/cardAmuleto10.svg')"><img src="assets/img_amuletos/Fragile_Heart 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Ganância Frágil', 'Faz com que o portador encontre mais Geo ao derrotar inimigos.', 'Este amuleto é frágil, porém você pode deixa-lo inquebrável.', 'assets/img_amuletos/cardAmuleto11.svg')"><img src="assets/img_amuletos/Fragile_Greed 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Força Frágil', 'Fortalece o portador, aumentando o dano causado aos inimigos com o ferrão.', 'Este amuleto é frágil, porém você pode deixa-lo inquebrável.', 'assets/img_amuletos/cardAmuleto12.svg')"><img src="assets/img_amuletos/Fragile_Strength 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Dobrador de Magias', 'Refletindo os desejos do Santuário das Almas de dominar a ALMA, melhora a capacidade do portador de lançar magias.', 'Reduz o custo de ALMA para canalização de magias.', 'assets/img_amuletos/cardAmuleto13.svg')"><img src="assets/img_amuletos/Spell_Twister 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Corpo Firme', 'Mantém seu portador firme, prevenindo-o de recuar quando atingir um inimigo com o Ferrão.', 'Permite que se mantenha firme e continue atacando.', 'assets/img_amuletos/cardAmuleto14.svg')"><img src="assets/img_amuletos/Steady_Body 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Golpe Pesado', 'Formado a partir dos ferro~es dos guerreiros caídos.', 'Aumenta a força do ferrão do portador, causando inimigos a recuar mais quando atingidos.', 'assets/img_amuletos/cardAmuleto15.svg')"><img src="assets/img_amuletos/Heavy_Blow 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Corte Rápido', 'nascido de ferrões imperfeitos e descartados que se fundiram. Os ferrões ainda desejam ser empunhados.', 'Permite que o portador corte muito mais rapidamente com o seu ferrão.', 'assets/img_amuletos/cardAmuleto16.svg')"><img src="assets/img_amuletos/Quick_Slash 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Ferrão Longo', 'Aumenta o alcance do ferrão do portador, permitindo que ele ataque inimigos de mais longe.', 'Combinado com a Marca de Orgulho, seu ferrão vira um Baseball Bath.', 'assets/img_amuletos/cardAmuleto17.svg')"><img src="assets/img_amuletos/Longnail 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Marca do Orgulho', 'Livremente dado pela Tribo Louva-a-Deus para aqueles que eles respeitam.', 'Aumenta considerávelmente o alcance do ferrão do portador, permitindo-lhe atingir os inimigos de mais longe.', 'assets/img_amuletos/cardAmuleto18.svg')"><img src="assets/img_amuletos/Mark_of_Pride 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Fúria dos Caídos', 'Incorpora a fúria e o heroísmo que vem sobre aqueles que estão prestes a morrer.', 'Quando próximo da morte, a força do portador irá aumentar.', 'assets/img_amuletos/cardAmuleto19.svg')"><img src="assets/img_amuletos/Fury_of_the_Fallen 1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Fragile Heart', 'Increases the wearers health, allowing them to take more damage.', 'This amulet is fragile, but you can make it unbreakable.', ' assets/img_amuletos/cardAmuleto10.svg')"><img src="assets/img_amuletos/Fragile_Heart1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Fragile Greed', 'Causes the wearer to find more Geo when defeating enemies.', 'This amulet is fragile, but you can make it unbreakable.', 'assets/img_amuletos/cardAmuleto11.svg')"><img src="assets/img_amuletos/Fragile_Greed1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Fragile Strength', 'Strengthens the bearer, increasing the damage dealt to enemies with the stinger.', 'This amulet is fragile, but you can make it unbreakable.', 'assets/img_amuletos/cardAmuleto12.svg')"><img src="assets/img_amuletos/Fragile_Strength1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Spell Bender', 'Reflecting the Sanctuary of Souls desires to master the SOUL, improves the bearers ability to cast spells.', 'Reduces the SOUL cost for channeling of spells.', 'assets/img_amuletos/cardAmuleto13.svg')"><img src="assets/img_amuletos/Spell_Twister1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Firm Body', 'Keeps its bearer steady, preventing them from retreating when hitting an enemy with the Sting.', 'Allows them to stand firm and continue attacking.', 'assets/img_amuletos/cardAmuleto14.svg')"><img src="assets/img_amuletos/Steady_Body1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Heavy Blow', 'Formed from the stings of fallen warriors.', 'Increases the strength of the bearers stinger, causing enemies to retreat further when hit.', 'assets/img_amuletos/cardAmuleto15.svg')"><img src="assets/img_amuletos/Heavy_Blow1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Quick Slash', 'Born from imperfect, discarded stingers that have fused together. The stingers still desire to be wielded.', 'Allows the wielder to cut much more quickly with their stinger .', 'assets/img_amuletos/cardAmuleto16.svg')"><img src="assets/img_amuletos/Quick_Slash1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Long Sting', 'Increases the range of the bearers stinger, allowing him to attack enemies from further away.', 'Combined with the Mark of Pride, his stinger becomes a Baseball Bath.', 'assets/img_amuletos/cardAmuleto17.svg')"><img src="assets/img_amuletos/Longnail1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Mark of Pride', 'Freely given by the Mantis Tribe to those they respect.', 'Considerably increases the range of the bearers stinger, allowing them to strike enemies from further away.', 'assets/img_amuletos/cardAmuleto18.svg')"><img src="assets/img_amuletos/Mark_of_Pride1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Rage of the Fallen', 'Embodies the fury and heroism that comes upon those who are about to die.', 'When close to death, the wearers strength will increase. ', 'assets/img_amuletos/cardAmuleto19.svg')"><img src="assets/img_amuletos/Fury_of_the_Fallen1.svg" alt=""></div>
                 </div>
                 <div id="linha3">
-                    <div class="amuletinho" onmouseover="infosAmuleto('Espinhos da Agonia', 'Sente a dor do seu portador e ataca o mundo ao seu redor.', 'Quando dano é recebido, brotam-se vinhas espinhentas que machucam inimigos próximos.', 'assets/img_amuletos/cardAmuleto20.svg')"><img src="assets/img_amuletos/Thorns_of_Agony 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Carapaça de Baldur', 'Protege o portador com uma carapaça dura enquanto estiver focando ALMA.', 'A carapaça não é indestrutível e se quebrará se absorver muito dano.', 'assets/img_amuletos/cardAmuleto21.svg')"><img src="assets/img_amuletos/Baldur_Shell 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Ninho de Flukes', 'Um amuleto vivo que nasceu no intestino de uma Flukermarn.', 'Transforma a magia Espirito Vingativo em uma horda de voláteis bebês flukes.', 'assets/img_amuletos/cardAmuleto22.svg')"><img src="assets/img_amuletos/Flukenest 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Insiguinia do Defensor', 'Amuleto único concedido pelo Rei de Hollownest ao seu mais leal cavaleiro. Gasto e sujo, mas bem cuidado.', 'O portador irá emitir um odor heróico.', 'assets/img_amuletos/cardAmuleto23.svg')"><img src="assets/img_amuletos/Defender%27s_Crest 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Útero Brilhante', 'Drena ALMA de seu portador e a utiliza para parir crias.', 'As crias não desejam comer e nem viver, e se sacrificarão para proteger o sue progenitor.', 'assets/img_amuletos/cardAmuleto24.svg')"><img src="assets/img_amuletos/Glowing_Womb 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Foco Rápido', 'Um amuleto que contém uma lente de cristal.', 'Aumenta a velocidade do foco de ALMA, permitindo que o portador se cure mais rapidamente.', 'assets/img_amuletos/cardAmuleto25.svg')"><img src="assets/img_amuletos/Quick_Focus 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Foco Profundo', 'Naturalmente formado dentro de um cristal durante um longo período. Atrai ALMA do ar que nos rodeia.', 'O portador irá focar ALMA em um ritmo mais lento, mas o efeito de cura será dobrado.', 'assets/img_amuletos/cardAmuleto26.svg')"><img src="assets/img_amuletos/Deep_Focus 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Coração de Sangue Vital', 'Contém um núcleo vivo que goteja sangue vital precioso.', 'Ao descansar, o portador irá ganhar uma camada de Sangue Vital que lhe protege de uma moderada quantidade de dano.', 'assets/img_amuletos/cardAmuleto27.svg')"><img src="assets/img_amuletos/Lifeblood_Heart 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Núcleo de Sangue Vital', 'Contém um núcleo vivo que derrama sangue vital precioso.', 'Ao descansar, o portador irá ganhar uma camada de Sangue Vital que lhe protege de uma grande quantidade de dano.', 'assets/img_amuletos/cardAmuleto28.svg')"><img src="assets/img_amuletos/Lifeblood_Core 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Benção de Joni', 'Abençoado por Joni, a gentil herege. Transfigura os fluidos vitais para sangue vital azul.', 'O portador terá uma carapaça mais saudável e poderá receber mais dano, porém ele será incapaz de se curar focando ALMA.', 'assets/img_amuletos/cardAmuleto29.svg')"><img src="assets/img_amuletos/Joni%27s_Blessing 1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Thorns of Agony', 'Feels the pain of its bearer and attacks the world around it.', 'When damage is received, thorny vines sprout that harm nearby enemies .', 'assets/img_amuletos/cardAmuleto20.svg')"><img src="assets/img_amuletos/Thorns_of_Agony1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Baldurs Carapace', 'Protects the wearer with a hard shell while focusing SOUL.', 'The shell is not indestructible and will break if it absorbs too much damage.', ' assets/img_amuletos/cardAmuleto21.svg')"><img src="assets/img_amuletos/Baldur_Shell1.webp" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Nest of Flukes', 'A living amulet that was born in the intestine of a Flukermarn.', 'Transforms the Vengeful Spirit spell into a horde of volatile baby flukes.', 'assets/img_amuletos/cardAmuleto22.svg')"><img src="assets/img_amuletos/Flukenest1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Defenders Insiguinia', 'Unique amulet bestowed by the King of Hollownest to his most loyal knight. Worn and dirty, but well cared for.', 'The wearer will emit a heroic odor .', 'assets/img_amuletos/cardAmuleto23.svg')"><img src="assets/img_amuletos/Defender%27s_Crest1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Bright Uterus', 'Drains the SOUL of its bearer and uses it to give birth to offspring.', 'The offspring do not wish to eat or live, and will sacrifice themselves to protect their progenitor .', 'assets/img_amuletos/cardAmuleto24.svg')"><img src="assets/img_amuletos/Glowing_Womb1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Quick Focus', 'An amulet that contains a crystal lens.', 'Increases the speed of SOUL focus, allowing the bearer to heal more quickly.', ' assets/img_amuletos/cardAmuleto25.svg')"><img src="assets/img_amuletos/Quick_Focus1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Deep Focus', 'Naturally formed within a crystal over a long period. Attracts SOUL from the air around us.', 'The wearer will focus SOUL at a slower pace , but the healing effect will be doubled.', 'assets/img_amuletos/cardAmuleto26.svg')"><img src="assets/img_amuletos/Deep_Focus1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Heart of Lifeblood', 'Contains a living core that drips precious lifeblood.', 'When resting, the bearer will gain a layer of Lifeblood that protects them from an moderate amount of damage.', 'assets/img_amuletos/cardAmuleto27.svg')"><img src="assets/img_amuletos/Lifeblood_Heart1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Core of Vital Blood', 'Contains a living core that sheds precious vital blood.', 'When resting, the bearer will gain a layer of Vital Blood that protects him from an large amount of damage.', 'assets/img_amuletos/cardAmuleto28.svg')"><img src="assets/img_amuletos/Lifeblood_Core1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Blessing of Joni', 'Blessed by Joni, the gentle heretic. Transfigures vital fluids into blue vital blood.', 'The bearer will have a healthier carapace and will be able to receive more damage, but he will be unable to heal himself by focusing SOUL.', 'assets/img_amuletos/cardAmuleto29.svg')"><img src="assets/img_amuletos/Joni%27s_Blessing1.svg" alt=""></div>
                 </div>
                 <div id="linha4">
                     <div class="espacinho"></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Sangue da Colmeia', 'Pepita dourada de um precioso néctar endurecido da Colmeia.', 'Cura as feridas do portador ao longo do tempo, permitindo-o recuperar vida sem focar ALMA.', 'assets/img_amuletos/cardAmuleto30.svg')"><img src="assets/img_amuletos/Hiveblood 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Cogumelo com Esporos', 'Composto por fungos vivos. Dispersas esporos em contato com a ALMA.', 'Ao focar ALMA, emite uma nuvem de esporos que danifica lentamente os inimigos.', 'assets/img_amuletos/cardAmuleto31.svg')"><img src="assets/img_amuletos/Spore_Shroom 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Sombra Afiada', 'Contém um feitiço proibido que transforma as sombras em armas mortais.', 'Ao se utilizar Esquiva Sombria, o corpo do portador se afiará e danificará inimigos.', 'assets/img_amuletos/cardAmuleto32.svg')"><img src="assets/img_amuletos/Sharp_Shadow 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Forma de Unn', 'Revela a forma de Unn dentro do portador.', 'Enquanto estiver focando ALMA, o portador assumirá uma nova forma e poderá se mover livremente para evitar inimigos.', 'assets/img_amuletos/cardAmuleto33.svg')"><img src="assets/img_amuletos/Shape_of_Unn 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Gloria do Mestre do Ferrão', 'Contém a paixão, a habilidade e os arrependimentos de um Mestre do Ferrão.', 'Aumenta a maestria do portador sob as Artes do Ferrão, permitindo-o focar seus poderes mais rapidamente e os liberar mais cedo.', 'assets/img_amuletos/cardAmuleto34.svg')"><img src="assets/img_amuletos/Nailmaster%27s_Glory 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Canção das Tecelãs', 'Amuleto sedoso contendo uma música de despedida, deixada pelas Tecelãs que partiramd e Hollownest para sua antiga casa.', 'Invoca pequenas tecelãs para dar o ao portador solitário um pouco de companheirismo e proteção.', 'assets/img_amuletos/cardAmuleto35.svg')"><img src="assets/img_amuletos/Weaversong 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Portador dos Sonhos', 'Amuleto transitório criado para aqueles que usam o Ferrão dos Sonhos e coletam Essência.', 'Permite ao portador carregar o Ferrão dos Sonhos mais rapidamente e coletar mais ALMA atingindo inimigos.', 'assets/img_amuletos/cardAmuleto36.svg')"><img src="assets/img_amuletos/Dream_Wielder 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Escudo dos Sonhos', 'Amuleto defendivo outrora usado por uma tribo que poderia moldar escudos.', 'Conjura um escudo que segue o portador e tenta protegê-lo', 'assets/img_amuletos/cardAmuleto37.svg')"><img src="assets/img_amuletos/Dreamshield 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Criança Green', 'Símbolode um ritual completo. Contém uma chama escarlate viva.', 'Para chegar ao nível máximo de força, deve cumprir as tasks do Grimm e derrotar ele em suas duas formas.', 'assets/img_amuletos/cardAmuleto38.svg')"><img src="assets/img_amuletos/Grimmchild 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Coração Vazio', 'Um vazio escondido interiormente, agora sem restrições. Unifica o vazio sob a vontade do portador.', 'Esse Amuleto é uma parte do seu portador e não pode ser desequipado.', 'assets/img_amuletos/cardAmuleto39.svg')"><img src="assets/img_amuletos/Void_Heart 1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Blood of the Hive', 'Golden nugget of precious hardened nectar from the Hive.', 'Heals the wearers wounds over time, allowing them to regain health without focusing SOUL .', 'assets/img_amuletos/cardAmuleto30.svg')"><img src="assets/img_amuletos/Hiveblood1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Mushroom with Spores', 'Composed of living fungi. Disperses spores in contact with the SOUL.', 'When focusing SOUL, emits a cloud of spores that slowly damages enemies. ', 'assets/img_amuletos/cardAmuleto31.svg')"><img src="assets/img_amuletos/Spore_Shroom1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Sharp Shadow', 'Contains a forbidden spell that transforms shadows into deadly weapons.', 'When using Shadow Dodge, the bearers body will sharpen and damage enemies.' , 'assets/img_amuletos/cardAmuleto32.svg')"><img src="assets/img_amuletos/Sharp_Shadow1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Shape of Unn', 'Reveals the form of Unn within the bearer.', 'While focusing on SOUL, the bearer will assume a new form and can move freely to avoid enemies .', 'assets/img_amuletos/cardAmuleto33.svg')"><img src="assets/img_amuletos/Shape_of_Unn1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Glory of the Sting Master', 'Contains the passion, skill and regrets of a Sting Master.', 'Increases the bearers mastery of the Sting Arts, allowing him to focus his powers more quickly and release them sooner.', 'assets/img_amuletos/cardAmuleto34.svg')"><img src="assets/img_amuletos/Nailmaster%27s_Glory1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Song of the Weavers', 'Silky amulet containing a farewell song, left by the Weavers who left Hollownest for their former home.', 'Summons small weavers to give to the bearer lonely a little companionship and protection.', 'assets/img_amuletos/cardAmuleto35.svg')"><img src="assets/img_amuletos/Weaversong1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Dreambringer', 'Transitional amulet created for those who use the Dream Stinger and collect Essence.', 'Allows the bearer to charge the Dream Stinger more quickly and collect more SOUL hitting enemies.', 'assets/img_amuletos/cardAmuleto36.svg')"><img src="assets/img_amuletos/Dream_Wielder1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Shield of Dreams', 'Defensive amulet once used by a tribe that could fashion shields.', 'Conjures a shield that follows the bearer and tries to protect them', 'assets/img_amuletos/cardAmuleto37.svg')"><img src="assets/img_amuletos/Dreamshield1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Green Child', 'Symbol of a complete ritual. Contains a living scarlet flame.', 'To reach the maximum level of strength, you must complete Grimms tasks and defeat him in its two forms.', 'assets/img_amuletos/cardAmuleto38.svg')"><img src="assets/img_amuletos/Grimmchild1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Empty Heart', 'A hidden void within, now unrestricted. Unifies the void under the will of the bearer.', 'This Amulet is a part of its bearer and cannot be unequipped.', 'assets/img_amuletos/cardAmuleto39.svg')"><img src="assets/img_amuletos/Void_Heart1.svg" alt=""></div>
                 </div>
                 <div id="linha5">
-                    <div class="amuletinho" onmouseover="infosAmuleto('Alma do Rei', 'Amuleto sagrado simbolizando a união entre seres superiores.', 'O portador irá lentamente absorver a ALMA ilimitada contida interiormente. Abre o caminho para o Local de Nascimento.', 'assets/img_amuletos/cardAmuleto40.svg')"><img src="assets/img_amuletos/Kingsoul 1.svg" alt=""></div>
-                    <div class="amuletinho" onmouseover="infosAmuleto('Melodia Despreocupada', 'Contém uma música de proteção que pode defender o portador de danos.', 'Na prática ninguém usa por ser horrível. E a Criança Grimm é muito mais Style', 'assets/img_amuletos/cardAmuleto41.svg')"><img src="assets/img_amuletos/Carefree_Melody 1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Soul of the King', 'Sacred amulet symbolizing the union between higher beings.', 'The wearer will slowly absorb the unlimited SOUL contained within. Opens the path to the Birthplace .', 'assets/img_amuletos/cardAmuleto40.svg')"><img src="assets/img_amuletos/Kingsoul1.svg" alt=""></div>
+                    <div class="amuletinho" onmouseover="infosAmuleto('Carefree Melody', 'Contains a protective song that can defend the bearer from harm.', 'In practice, no one uses it because it is horrible. And the Grimm Child is much more Style ', 'assets/img_amuletos/cardAmuleto41.svg')"><img src="assets/img_amuletos/Carefree_Melody1.svg" alt=""></div>
                 </div>
             </section>
             <section id="info_amuleto_desk">
@@ -126,7 +170,7 @@
             </section>
         </section>
     </main>
+    <script src="assets/js/App.js"></script>
+    <script src="assets/js/amuletos.js"></script>
 </body>
-<script src="assets/js/App.js"></script>
-<script src="assets/js/amuletos.js"></script>
 </html>

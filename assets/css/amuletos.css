@@ -4,7 +4,7 @@ main {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url(/TCM/assets/img/bg_amuletos_desk.webp);
+    background-image: url(../img/bg_amuletos_desk.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,8 +16,8 @@ main {
     justify-content: center;
 }
 
-#div_title_amuletos_mobile {
-    display: none;
+#title_amuletos_desk {
+    width: 50%;
 }
 
 #area {
@@ -86,11 +86,7 @@ main {
     color: #fff;
 }
 
-#info_amuleto_mobile {
-    display: none;
-}
-
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 940px) {
     #area {
         flex-direction: column;
         height: 100%;
@@ -123,18 +119,9 @@ main {
     }
 
     #div_title_amuletos_desk {
-        display: none;
+        margin-top: 2rem;
     }
-
-    #div_title_amuletos_mobile {
-        display: block;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-    }
-
-    main {
-        height: 100%;
+    #title_amuletos_desk {
+        width: 70%;
     }
 }

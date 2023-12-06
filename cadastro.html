@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,44 +10,90 @@
     <link rel="stylesheet" href="assets/css/header.css">
 </head>
 <body>
-    <header>
-    <nav class="new-nav-bar">
-            <div class="new-logo">
-                <img src="assets/img/Hollow Icon.svg" alt="">
-            </div>
-            <div class="new-nav-list">
-                <ul id="ben10">
-                    <li class="new-nav-item"><a href="index.html" class="new-nav-link">Início</a></li>
-                    <li class="new-nav-item"><a href="seletor_perso.html" class="new-nav-link">Personagens</a></li>
-                    <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Amuletos</a></li>
-                    <li class="new-nav-item"><a href="mapa.html" class="new-nav-link">Mapa interativo</a></li>
-                    <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Magias</a></li>
-                    <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Dark</a></li>
-                </ul>
-            </div>
-            <div class="new-login-button">
-                <button><a href="login.html">Entrar</a></button>
-            </div>
     
-            <div class="new-mobile-menu-icon">
-                <button onclick="menuShow()"><img class="new-icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
-            </div>
-        </nav>
-        <div class="new-mobile-menu">
-            <ul id="ben10">
-                <li class="new-nav-item"><a href="index.html" class="new-nav-link">Início</a></li>
-                <li class="new-nav-item"><a href="seletor_perso.html" class="new-nav-link">Personagens</a></li>
-                <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Amuletos</a></li>
-                <li class="new-nav-item"><a href="mapa.html" class="new-nav-link">Mapa interativo</a></li>
-                <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Magias</a></li>
-                <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Dark</a></li>
-            </ul>
-            <div class="new-login-button">
-                <button><a href="login.html">Entrar</a></button>
-            </div>
-        </div>
-    </header>
-    <main>
+                        <header>
+                        <nav class="new-nav-bar">
+                            <div class="new-logo">
+                                <img src="assets/img/Hollow_Icon.svg" alt="">
+                            </div>
+                            <div class="new-nav-list">
+                                <ul class="ben10">
+                                    <li class="new-nav-item"><a href="index.html" class="new-nav-link">Home</a></li>
+                                    <li id="knight" class="new-nav-item new-nav-link dropdown">Knight <img class="caretKnight" src="assets/img/caret-down-fill.svg" alt="">
+                                        <div class="dropdown-menu knight">
+                                            <a href="amuletos.html" class="new-nav-link">Charms</a>
+                                            <a href="cavaleiro.html" class="new-nav-link">The Nail</a>
+                                            <a href="magias.html" class="new-nav-link">Spells</a>
+                                            <a href="dark.html" class="new-nav-link">Born</a>
+                                            <a href="energias.html" class="new-nav-link">Energys</a>
+                                        </div>
+                                    </li>
+                                    <li id="battle" class="new-nav-item new-nav-link dropdown">Battle <img class="caretBattle" src="assets/img/caret-down-fill.svg" alt="">
+                                        <div class="dropdown-menu battle">
+                                            <a href="coliseu.html" class="new-nav-link">Colosseum</a>
+                                            <a href="panteao.html" class="new-nav-link">Pantheon</a>
+                                            <a href="radiancia.html" class="new-nav-link">Radiance</a>
+                                        </div>
+                                    </li>
+                                    <li id="gallery" class="new-nav-item new-nav-link dropdown">Gallery <img class="caretGallery" src="assets/img/caret-down-fill.svg" alt="">
+                                        <div class="dropdown-menu gallery">
+                                            <a href="dark.html" class="new-nav-link">Born</a>
+                                            <a href="galeriaCenarios.html" class="new-nav-link">Scenes</a>
+                                        </div>
+                                    </li>
+                                    <li class="new-nav-item"><a href="dlc.html" class="new-nav-link">DLC</a></li>
+                                    <li class="new-nav-item"><a href="sonhadores.html" class="new-nav-link">Dreamers</a></li>
+                                    <li class="new-nav-item"><a href="silksong.html" class="new-nav-link">Silksong</a></li>
+                                    <li class="new-nav-item"><a href="florDelicada.html" class="new-nav-link">Delicate Flower</a></li>
+                                    <li class="new-nav-item"><a href="quiz.html" class="new-nav-link">Quiz</a></li>
+                                </ul>
+                            </div>
+                            <div class="new-login-button">
+                                <button onclick="link('login.html')">Login</button>
+                            </div>
+                
+                            <div class="new-mobile-menu-icon">
+                                <button onclick="menuShow()"><img class="new-icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+                            </div>
+                        </nav>
+                        <div class="new-mobile-menu">
+                            <ul class="ben10">
+                                <li class="new-nav-item"><a href="index.html" class="new-nav-link">Home</a></li>
+                                <li id="knightMobile" class="new-nav-item new-nav-link dropdown">Knight <img class="caretKnight" src="assets/img/caret-down-fill.svg" alt="">
+                                    <div class="dropdown-menu knightMobile">
+                                        <a href="amuletos.html" class="new-nav-link">Charms</a>
+                                        <a href="cavaleiro.html" class="new-nav-link">The Nail</a>
+                                        <a href="magias.html" class="new-nav-link">Spells</a>
+                                        <a href="dark.html" class="new-nav-link">Born</a>
+                                        <a href="energias.html" class="new-nav-link">Energys</a>
+                                    </div>
+                                </li>
+                                <li id="battleMobile" class="new-nav-item new-nav-link dropdown">Battle <img class="caretBattle" src="assets/img/caret-down-fill.svg" alt="">
+                                    <div class="dropdown-menu battleMobile">
+                                        <a href="coliseu.html" class="new-nav-link">Colosseum</a>
+                                        <a href="panteao.html" class="new-nav-link">Pantheon</a>
+                                        <a href="radiancia.html" class="new-nav-link">Radiance</a>
+                                    </div>
+                                </li>
+                                <li id="galleryMobile" class="new-nav-item new-nav-link dropdown">Gallery <img class="caretGallery" src="assets/img/caret-down-fill.svg" alt="">
+                                    <div class="dropdown-menu galleryMobile">
+                                        <a href="dark.html" class="new-nav-link">Born</a>
+                                        <a href="galeriaCenarios.html" class="new-nav-link">Scenes</a>
+                                    </div>
+                                </li>
+                                <li class="new-nav-item"><a href="dlc.html" class="new-nav-link">DLC</a></li>
+                                <li class="new-nav-item"><a href="sonhadores.html" class="new-nav-link">Dreamers</a></li>
+                                <li class="new-nav-item"><a href="silksong.html" class="new-nav-link">Silksong</a></li>
+                                <li class="new-nav-item"><a href="florDelicada.html" class="new-nav-link">Delicate Flower</a></li>
+                                <li class="new-nav-item"><a href="quiz.html" class="new-nav-link">Quiz</a></li>
+                            </ul>
+                            <div class="new-login-button">
+                                <button onclick="link('login.html')">Login</button>
+                            </div>
+                        </div>
+                    </header>
+    
+    <main id="main">
         <section id="login">
             <div id="imagem_hollow">
                 <img id="imagem_hollow_div" src="assets/img/Hollow_login_desk.webp" alt="Hollow Knight segurando uma espada olhando para cima">
@@ -53,20 +101,73 @@
             <div id="login_inputs">
                 <img id="titledesk" src="assets/img/image 1.svg" alt="Texto escrito na fonte de titulo de hollow knight 'Login'">
                 <img id="titlemobile" src="assets/img/login_title_mobile.webp" alt="Texto escrito na fonte de titulo de hollow knight 'Login'">
-                <form id="dados_login">
+                <form action="cadastro.php" method="POST" id="dados_login">
                     <label for="nome"></label>
-                    <input type="text" class="inputs" name="nome" size="50" placeholder="Insira seu Username" required>
+                    <input type="text" class="inputs" name="nome" size="50" placeholder="Insert your username" required>
                     <label for="email"></label>
-                    <input type="email" class="inputs" name="username" size="50" placeholder="Insira seu Email" required>
+                    <input type="email" class="inputs" name="username" size="50" placeholder="Insert your Email" required>
                     <label for="senha"></label>
-                    <input type="password" class="inputs" name="password" size="50" placeholder="Insira sua senha" required>
-                    <input type="submit" name="submit" id="Entrar" value="Cadastrar">
+                    <input type="password" class="inputs" name="password" size="50" placeholder="Insert your password" required>
+                    <button id="fotoPerfil" class="inputs" type="button">Chose profile picture</button>
+                    <div class="escolherImagem">
+                        <div class="exit">
+                            <img id="exitImg" src="assets/img/close_white_36dp.svg" alt="">
+                        </div>
+                        <div class="labels">
+                            <label class="labelImage">
+                                <input type="radio" name="imagem" value="assets/img_perfil/cavaleiroQuebrado.webp" style="display: none;">
+                                <img src="assets/img_perfil/cavaleiroQuebrado.webp" alt="Imagem 1">
+                            </label>
+                            <label class="labelImage">
+                                <input type="radio" name="imagem" value="assets/img_perfil/Emlitia_Circle.svg" style="display: none;">
+                                <img src="assets/img_perfil/Emlitia_Circle.svg" alt="Imagem 2">
+                            </label>
+                            <label class="labelImage">
+                                <input type="radio" name="imagem" value="assets/img_perfil/falsoCavaleiro.webp" style="display: none;">
+                                <img src="assets/img_perfil/falsoCavaleiro.webp" alt="Imagem 3">
+                            </label>
+                            <label class="labelImage">
+                                <input type="radio" name="imagem" value="assets/img_perfil/Grimm_Circle.svg" style="display: none;">
+                                <img src="assets/img_perfil/Grimm_Circle.svg" alt="Imagem 3">
+                            </label>
+                            <label class="labelImage">
+                                <input type="radio" name="imagem" value="assets/img_perfil/hollowKnight.webp" style="display: none;">
+                                <img src="assets/img_perfil/hollowKnight.webp" alt="Imagem 3">
+                            </label>
+                            <label class="labelImage">
+                                <input type="radio" name="imagem" value="assets/img_perfil/hornet.webp" style="display: none;">
+                                <img src="assets/img_perfil/hornet.webp" alt="Imagem 3">
+                            </label>
+                            <label class="labelImage">
+                                <input type="radio" name="imagem" value="assets/img_perfil/Godhome_Vessel.webp" style="display: none;">
+                                <img src="assets/img_perfil/Godhome_Vessel.webp" alt="Imagem 3">
+                            </label>
+                            <label class="labelImage">
+                                <input type="radio" name="imagem" value="assets/img_perfil/Myla_Circle.svg" style="display: none;">
+                                <img src="assets/img_perfil/Myla_Circle.svg" alt="Imagem 3">
+                            </label>
+                            <label class="labelImage">
+                                <input type="radio" name="imagem" value="assets/img_perfil/Nightmare_King_Icon.webp" style="display: none;">
+                                <img src="assets/img_perfil/Nightmare_King_Icon.webp" alt="Imagem 3">
+                            </label>
+                            <label class="labelImage">
+                                <input type="radio" name="imagem" value="assets/img_perfil/Quirrel_Circle-2.svg" style="display: none;">
+                                <img src="assets/img_perfil/Quirrel_Circle-2.svg" alt="Imagem 3">
+                            </label>
+                            <label class="labelImage">
+                                <input type="radio" name="imagem" value="assets/img_perfil/radiancia.webp" style="display: none;">
+                                <img src="assets/img_perfil/radiancia.webp" alt="Imagem 3">
+                            </label>
+                        </div>
+                    </div>
+                    <input type="submit" name="submit" id="Entrar" value="Register">
                 </form>
-                <br>
-                <p id="nãoPossui">Já possui uma conta?<a href="login.html"><b>ENTRE</b></a></p>
+                <p id="naoPossui">Have an account?<a href="login.php"><b>LOGIN</b></a></p>
             </div>
         </section>
     </main>
+    <script src="assets/js/App.js"></script>
+    <script src="assets/js/cadastro.js"></script>
 </body>
-<script src="assets/js/App.js"></script>
+
 </html>

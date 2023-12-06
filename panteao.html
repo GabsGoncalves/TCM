@@ -1,0 +1,174 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Knight</title>
+    <link rel="stylesheet" href="assets/css/panteaoSeletor.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+</head>
+
+<body>
+    
+                        <header>
+                        <nav class="new-nav-bar">
+                            <div class="new-logo">
+                                <img src="assets/img/Hollow_Icon.svg" alt="">
+                            </div>
+                            <div class="new-nav-list">
+                                <ul class="ben10">
+                                    <li class="new-nav-item"><a href="index.html" class="new-nav-link">Home</a></li>
+                                    <li id="knight" class="new-nav-item new-nav-link dropdown">Knight <img class="caretKnight" src="assets/img/caret-down-fill.svg" alt="">
+                                        <div class="dropdown-menu knight">
+                                            <a href="amuletos.html" class="new-nav-link">Charms</a>
+                                            <a href="cavaleiro.html" class="new-nav-link">The Nail</a>
+                                            <a href="magias.html" class="new-nav-link">Spells</a>
+                                            <a href="dark.html" class="new-nav-link">Born</a>
+                                            <a href="energias.html" class="new-nav-link">Energys</a>
+                                        </div>
+                                    </li>
+                                    <li id="battle" class="new-nav-item new-nav-link dropdown">Battle <img class="caretBattle" src="assets/img/caret-down-fill.svg" alt="">
+                                        <div class="dropdown-menu battle">
+                                            <a href="coliseu.html" class="new-nav-link">Colosseum</a>
+                                            <a href="panteao.html" class="new-nav-link">Pantheon</a>
+                                            <a href="radiancia.html" class="new-nav-link">Radiance</a>
+                                        </div>
+                                    </li>
+                                    <li id="gallery" class="new-nav-item new-nav-link dropdown">Gallery <img class="caretGallery" src="assets/img/caret-down-fill.svg" alt="">
+                                        <div class="dropdown-menu gallery">
+                                            <a href="dark.html" class="new-nav-link">Born</a>
+                                            <a href="galeriaCenarios.html" class="new-nav-link">Scenes</a>
+                                        </div>
+                                    </li>
+                                    <li class="new-nav-item"><a href="dlc.html" class="new-nav-link">DLC</a></li>
+                                    <li class="new-nav-item"><a href="sonhadores.html" class="new-nav-link">Dreamers</a></li>
+                                    <li class="new-nav-item"><a href="silksong.html" class="new-nav-link">Silksong</a></li>
+                                    <li class="new-nav-item"><a href="florDelicada.html" class="new-nav-link">Delicate Flower</a></li>
+                                    <li class="new-nav-item"><a href="quiz.html" class="new-nav-link">Quiz</a></li>
+                                </ul>
+                            </div>
+                            <div class="new-login-button">
+                                <button onclick="link('login.html')">Login</button>
+                            </div>
+                
+                            <div class="new-mobile-menu-icon">
+                                <button onclick="menuShow()"><img class="new-icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+                            </div>
+                        </nav>
+                        <div class="new-mobile-menu">
+                            <ul class="ben10">
+                                <li class="new-nav-item"><a href="index.html" class="new-nav-link">Home</a></li>
+                                <li id="knightMobile" class="new-nav-item new-nav-link dropdown">Knight <img class="caretKnight" src="assets/img/caret-down-fill.svg" alt="">
+                                    <div class="dropdown-menu knightMobile">
+                                        <a href="amuletos.html" class="new-nav-link">Charms</a>
+                                        <a href="cavaleiro.html" class="new-nav-link">The Nail</a>
+                                        <a href="magias.html" class="new-nav-link">Spells</a>
+                                        <a href="dark.html" class="new-nav-link">Born</a>
+                                        <a href="energias.html" class="new-nav-link">Energys</a>
+                                    </div>
+                                </li>
+                                <li id="battleMobile" class="new-nav-item new-nav-link dropdown">Battle <img class="caretBattle" src="assets/img/caret-down-fill.svg" alt="">
+                                    <div class="dropdown-menu battleMobile">
+                                        <a href="coliseu.html" class="new-nav-link">Colosseum</a>
+                                        <a href="panteao.html" class="new-nav-link">Pantheon</a>
+                                        <a href="radiancia.html" class="new-nav-link">Radiance</a>
+                                    </div>
+                                </li>
+                                <li id="galleryMobile" class="new-nav-item new-nav-link dropdown">Gallery <img class="caretGallery" src="assets/img/caret-down-fill.svg" alt="">
+                                    <div class="dropdown-menu galleryMobile">
+                                        <a href="dark.html" class="new-nav-link">Born</a>
+                                        <a href="galeriaCenarios.html" class="new-nav-link">Scenes</a>
+                                    </div>
+                                </li>
+                                <li class="new-nav-item"><a href="dlc.html" class="new-nav-link">DLC</a></li>
+                                <li class="new-nav-item"><a href="sonhadores.html" class="new-nav-link">Dreamers</a></li>
+                                <li class="new-nav-item"><a href="silksong.html" class="new-nav-link">Silksong</a></li>
+                                <li class="new-nav-item"><a href="florDelicada.html" class="new-nav-link">Delicate Flower</a></li>
+                                <li class="new-nav-item"><a href="quiz.html" class="new-nav-link">Quiz</a></li>
+                            </ul>
+                            <div class="new-login-button">
+                                <button onclick="link('login.html')">Login</button>
+                            </div>
+                        </div>
+                    </header>
+    
+    <main>
+        <section data-animar="fade-right" id="infos">
+            <h1>Pantheons</h1>
+            <p>
+                Pantheons are a mechanic added to Godhome. They
+                feature a select set of bosses to combat before reaching the "Peak" of each Pantheon and facing the
+                unique final boss of each challenge. Most bosses, with the exception of the final bosses, need to be
+                defeated outside Godhome first before the Pantheon can be accessed that contains those bosses
+            </p>
+        </section>
+        <section id="fases">
+            <div data-animar-slow="fade-up" onclick="link('panteao1.php')"><img src="assets/img/panteaoMestre.webp" alt="">
+                <h1>Pantheon of the Master</h1>
+            </div>
+            <div data-animar-slow="fade-down" onclick="link('panteao2.php')"><img src="assets/img/panteaoArtista.webp" alt="">
+                <h1>Pantheon of the Artist</h1>
+            </div>
+            <div data-animar-slow="fade-up" onclick="link('panteao3.php')"><img src="assets/img/panteaoSabio.webp" alt="">
+                <h1>Pantheon of the Sage</h1>
+            </div>
+            <div data-animar-slow="fade-down" onclick="link('panteao4.php')"><img src="assets/img/panteaoCavaleiro.webp" alt="">
+                <h1>Pantheon of the Knight</h1>
+            </div>
+            <div data-animar-slow="fade-up" onclick="link('panteao5.php')"><img src="assets/img/panteaoHollow.webp" alt="">
+                <h1>Pantheon of Hallownest</h1>
+            </div>
+        </section>
+        <section data-animar-slow="fade-left" id="vinculos">
+            <h1>Bindings</h1>
+            <p>
+                Bindings are optional challenges that can be applied to each separate Pantheon. Any combination of them
+                can be applied. If all bindings are selected they glow a radiant yellow.
+            </p>
+            <div id="vinculosInfo">
+                <div data-animar-slow="fade-right" class="binding">
+                    <div class="texto">
+                        <h1>NAIL BINDING</h1>
+                        <p>Reduces <span class="link" onclick="link('cavaleiro.php')">Nail</span> damage to 80% or sets
+                            it to 13 if the damage is above 13. For Nail levels 1/2/3/4/5 the resulting damage values
+                            are 4/7/10/13/13 respectively. Nail Art damage is calculated based on this damage. The
+                            Coiled Nail and Pure Nail both provide the maximum amount of damage.</p>
+                    </div>
+                    <div class="img"><img src="assets/img/vinculoFerrao.webp" alt=""></div>
+                </div>
+                <div data-animar-fast="fade" class="separator"><img src="assets/img/Divisor.svg" alt=""></div>
+                <div data-animar="fade-left" class="binding">
+                    <div class="texto">
+                        <h1>SHELL BINDING</h1>
+                        <p>Limits the Knight's maximum available Masks to four, but does not affect Lifeblood Masks or
+                            Masks granted by Fragile Heart/Grimm Troupe content Unbreakable Heart.</p>
+                    </div>
+                    <div class="img"><img src="assets/img/vinculoMask.webp" alt=""></div>
+                </div>
+                <div data-animar-fast="fade" class="separator"><img src="assets/img/Divisor.svg" alt=""></div>
+                <div data-animar-slow="fade-right" class="binding">
+                    <div class="texto">
+                        <h1>CHARMS BINDING</h1>
+                        <p>Unequips all <span class="link" onclick="link('amuletos.php')">Charms</span> and prevents
+                            equipping them again.</p>
+                    </div>
+                    <div class="img"><img src="assets/img/vinculoCharm.webp" alt=""></div>
+                </div>
+                <div data-animar-fast="fade" class="separator"><img src="assets/img/Divisor.svg" alt=""></div>
+                <div data-animar="fade-left" class="binding">
+                    <div class="texto">
+                        <h1>SOUL BINDING</h1>
+                        <p>Allows only 33% <span class="link" onclick="link('magias.php')">Spell</span> to be gathered
+                            and disables Soul Vessels, allowing for one Focus to heal or one SOUL cast.</p>
+                    </div>
+                    <div class="img"><img src="assets/img/vinculoSoul.webp" alt=""></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/App.js"></script>
+</body>
+</html>

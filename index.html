@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -8,57 +10,99 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/header.css"> 
+    <link rel="stylesheet" href="assets/css/header.css">
 </head>
+
 <body>
-    <header>
-        <nav class="new-nav-bar">
-            <div class="new-logo">
-                <img src="assets/img/Hollow Icon.svg" alt="">
-            </div>
-            <div class="new-nav-list">
-                <ul id="ben10">
-                    <li class="new-nav-item"><a href="index.html" class="new-nav-link">Início</a></li>
-                    <li class="new-nav-item"><a href="seletor_perso.html" class="new-nav-link">Personagens</a></li>
-                    <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Amuletos</a></li>
-                    <li class="new-nav-item"><a href="mapa.html" class="new-nav-link">Mapa interativo</a></li>
-                    <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Magias</a></li>
-                    <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Dark</a></li>
-                </ul>
-            </div>
-            <div class="new-login-button">
-                <button><a href="login.html">Entrar</a></button>
-            </div>
     
-            <div class="new-mobile-menu-icon">
-                <button onclick="menuShow()"><img class="new-icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
-            </div>
-        </nav>
-        <div class="new-mobile-menu">
-            <ul id="ben10">
-                <li class="new-nav-item"><a href="index.html" class="new-nav-link">Início</a></li>
-                <li class="new-nav-item"><a href="seletor_perso.html" class="new-nav-link">Personagens</a></li>
-                <li class="new-nav-item"><a href="amuletos.html" class="new-nav-link">Amuletos</a></li>
-                <li class="new-nav-item"><a href="mapa.html" class="new-nav-link">Mapa interativo</a></li>
-                <li class="new-nav-item"><a href="magias.html" class="new-nav-link">Magias</a></li>
-                <li class="new-nav-item"><a href="dark.html" class="new-nav-link">Dark</a></li>
-            </ul>
+                        <header>
+                        <nav class="new-nav-bar">
+                            <div class="new-logo">
+                                <img src="assets/img/Hollow_Icon.svg" alt="">
+                            </div>
+                            <div class="new-nav-list">
+                                <ul class="ben10">
+                                    <li class="new-nav-item"><a href="index.html" class="new-nav-link">Home</a></li>
+                                    <li id="knight" class="new-nav-item new-nav-link dropdown">Knight <img class="caretKnight" src="assets/img/caret-down-fill.svg" alt="">
+                                        <div class="dropdown-menu knight">
+                                            <a href="amuletos.html" class="new-nav-link">Charms</a>
+                                            <a href="cavaleiro.html" class="new-nav-link">The Nail</a>
+                                            <a href="magias.html" class="new-nav-link">Spells</a>
+                                            <a href="dark.html" class="new-nav-link">Born</a>
+                                            <a href="energias.html" class="new-nav-link">Energys</a>
+                                        </div>
+                                    </li>
+                                    <li id="battle" class="new-nav-item new-nav-link dropdown">Battle <img class="caretBattle" src="assets/img/caret-down-fill.svg" alt="">
+                                        <div class="dropdown-menu battle">
+                                            <a href="coliseu.html" class="new-nav-link">Colosseum</a>
+                                            <a href="panteao.html" class="new-nav-link">Pantheon</a>
+                                            <a href="radiancia.html" class="new-nav-link">Radiance</a>
+                                        </div>
+                                    </li>
+                                    <li id="gallery" class="new-nav-item new-nav-link dropdown">Gallery <img class="caretGallery" src="assets/img/caret-down-fill.svg" alt="">
+                                        <div class="dropdown-menu gallery">
+                                            <a href="dark.html" class="new-nav-link">Born</a>
+                                            <a href="galeriaCenarios.html" class="new-nav-link">Scenes</a>
+                                        </div>
+                                    </li>
+                                    <li class="new-nav-item"><a href="dlc.html" class="new-nav-link">DLC</a></li>
+                                    <li class="new-nav-item"><a href="sonhadores.html" class="new-nav-link">Dreamers</a></li>
+                                    <li class="new-nav-item"><a href="silksong.html" class="new-nav-link">Silksong</a></li>
+                                    <li class="new-nav-item"><a href="florDelicada.html" class="new-nav-link">Delicate Flower</a></li>
+                                    <li class="new-nav-item"><a href="quiz.html" class="new-nav-link">Quiz</a></li>
+                                </ul>
+                            </div>
+                            <div class="new-login-button">
+                                <button onclick="link('login.html')">Login</button>
+                            </div>
+                
+                            <div class="new-mobile-menu-icon">
+                                <button onclick="menuShow()"><img class="new-icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+                            </div>
+                        </nav>
+                        <div class="new-mobile-menu">
+                            <ul class="ben10">
+                                <li class="new-nav-item"><a href="index.html" class="new-nav-link">Home</a></li>
+                                <li id="knightMobile" class="new-nav-item new-nav-link dropdown">Knight <img class="caretKnight" src="assets/img/caret-down-fill.svg" alt="">
+                                    <div class="dropdown-menu knightMobile">
+                                        <a href="amuletos.html" class="new-nav-link">Charms</a>
+                                        <a href="cavaleiro.html" class="new-nav-link">The Nail</a>
+                                        <a href="magias.html" class="new-nav-link">Spells</a>
+                                        <a href="dark.html" class="new-nav-link">Born</a>
+                                        <a href="energias.html" class="new-nav-link">Energys</a>
+                                    </div>
+                                </li>
+                                <li id="battleMobile" class="new-nav-item new-nav-link dropdown">Battle <img class="caretBattle" src="assets/img/caret-down-fill.svg" alt="">
+                                    <div class="dropdown-menu battleMobile">
+                                        <a href="coliseu.html" class="new-nav-link">Colosseum</a>
+                                        <a href="panteao.html" class="new-nav-link">Pantheon</a>
+                                        <a href="radiancia.html" class="new-nav-link">Radiance</a>
+                                    </div>
+                                </li>
+                                <li id="galleryMobile" class="new-nav-item new-nav-link dropdown">Gallery <img class="caretGallery" src="assets/img/caret-down-fill.svg" alt="">
+                                    <div class="dropdown-menu galleryMobile">
+                                        <a href="dark.html" class="new-nav-link">Born</a>
+                                        <a href="galeriaCenarios.html" class="new-nav-link">Scenes</a>
+                                    </div>
+                                </li>
+                                <li class="new-nav-item"><a href="dlc.html" class="new-nav-link">DLC</a></li>
+                                <li class="new-nav-item"><a href="sonhadores.html" class="new-nav-link">Dreamers</a></li>
+                                <li class="new-nav-item"><a href="silksong.html" class="new-nav-link">Silksong</a></li>
+                                <li class="new-nav-item"><a href="florDelicada.html" class="new-nav-link">Delicate Flower</a></li>
+                                <li class="new-nav-item"><a href="quiz.html" class="new-nav-link">Quiz</a></li>
+                            </ul>
+                            <div class="new-login-button">
+                                <button onclick="link('login.html')">Login</button>
+                            </div>
+                        </div>
+                    </header>
     
-            <div class="new-login-button">
-                <button><a href="login.html">Entrar</a></button>
-            </div>
-        </div>
-    </header>    
     <main>
-        <video id="bg_video" src="assets/video/Hollow_Index_Ani.mp4" autoplay muted loop></video>
+        <video id="bg_video" src="assets/video/Hollow_Index_Ani.webm" autoplay muted loop></video>
         <div id="entre_vazio_desk">
-            <img src="assets/img/entre_vazio.webp" alt="Imagem com fonte de hollow knight escrito Entre no Vazio">
+            <img src="assets/img/enter_void.png" alt="Imagem com fonte de hollow knight escrito Entre no Vazio">
         </div>
-        <div id="entre_vazio_mobile">
-            <img src="assets/img/entre_vazio_mobile.webp"
-                alt="Imagem com fonte de hollow knight escrito Entre no Vazio">
-        </div>
-        <section id="zinho_desk" class="carousel slide" data-bs-ride="carousel"> <!--Para uso de bootstrap é idealusar nomes em igles pois o boot segue ete momes-->
+        <section id="zinho_desk" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="carrossel_item_desk">
@@ -67,12 +111,18 @@
                                 <img src="assets/img/Hollow_Front.png" alt="">
                             </div>
                         </div>
-                        <div class ="divisor">
+                        <div class="divisor">
                             <img src="assets/img/Divisor_carrossel.svg" alt="">
                         </div>
                         <div class="textinho">
-                            <p class="texto_1">Este é você, o personagem principal da história. Apesar da pouca altura, tem grande poder escondido naquela carapaça vazia, uma casca que cobre o vazio que compõe o seu ser. Qual é a sua história? Seria você só mais um dos cavaleiros do rei? Você conseguirá conter a praga que assola nossos sonhos?</p>
-                            <p class="texto_2">Você é o verdadeiro cavaleiro vazio?</p>
+                            <div class="textinho">
+                                <p class="texto_1">This is you, the main character of the story. Despite your short
+                                    stature, you possess great power hidden within that empty shell, a husk that covers
+                                    the void that makes up your being. What is your story? Are you just another one of
+                                    the king's knights? Can you contain the plague that afflicts our dreams?</p>
+                                <p class="texto_2">Are you the true hollow knight?</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -83,13 +133,17 @@
                                 <img src="assets/img/Hornet_Front_desk.png" alt="">
                             </div>
                         </div>
-                        <div class ="divisor">
+                        <div class="divisor">
                             <img src="assets/img/Divisor_carrossel.svg" alt="">
                         </div>
                         <div class="textinho">
-                            <p class="texto_1">Está é Hornet, uma oponente formidável de se encontrar, com suas frases enigmáticas e sua agulha afiada ela protege as ruínas de Hallownest, para prosseguir você deve provar ser digno de seu título de cavaleiro, quais enigmas ela esconde? Qual é o seu passado?</p>
-                            <p class="texto_2">Quem são os verdadeiros fantasmas de Hollownest?</p>
+                            <p class="texto_1">This is Hornet, a formidable opponent to encounter. With her enigmatic
+                                phrases and sharp needle, she protects the ruins of Hallownest. To proceed, you must
+                                prove yourself worthy of her title as a knight. What mysteries does she hide? What is
+                                her past?</p>
+                            <p class="texto_2">Who are the true ghosts of Hollownest?</p>
                         </div>
+
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -99,14 +153,18 @@
                                 <img src="assets/img/Qirrel_front_desk.png" alt="">
                             </div>
                         </div>
-                        <div class ="divisor">
+                        <div class="divisor">
                             <img src="assets/img/Divisor_carrossel.svg" alt="">
                         </div>
                         <div class="textinho">
-                            <p class="texto_1">Quirrel. onde esse sentimento o levará?
-                                quirrel te ajuda em alguns momentos do jogo, até cumprir o seu papel de chegar onde o sentimento estranho te leva. ele escuta um chamdo até a sala de monomon, a professora, a qual ele carrega uma máscara, mesmo sem lembrar de nada de seu passado.</p>
-                            <p class="texto_2">quem está o chamando? que ligação quirrel tem com monomon, a professora?</p>
+                            <p class="texto_1">Quirrel. Where will this feeling lead him? Quirrel helps you in some
+                                moments of the game until he fulfills his role of reaching where the strange feeling
+                                leads. He hears a call to Monomon's room, the teacher, whom he carries a mask for, even
+                                without remembering anything about his past.</p>
+                            <p class="texto_2">Who is calling him? What connection does Quirrel have with Monomon, the
+                                teacher?</p>
                         </div>
+
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -116,12 +174,16 @@
                                 <img src="assets/img/Sonhadores_front_desk.png" alt="">
                             </div>
                         </div>
-                        <div class ="divisor">
+                        <div class="divisor">
                             <img src="assets/img/Divisor_carrossel.svg" alt="">
                         </div>
                         <div class="textinho">
-                            <p class="texto_1">Os três sonhadores, os três protetores de hollownest. em uma das tentativas do rei pálido de vencer e acabar com a praga, ele decidiu formar um selo com o poder de três poderosos insetos, selando o templo do ovo negro onde, teoricamente, estava contida a praga.</p>
-                            <p class="texto_2">os sonhadores são herrah a besta, Monomon a professora e lurien o observador.</p>
+                            <p class="texto_1">The three dreamers, the three protectors of Hollownest. In one of the
+                                Pale King's attempts to overcome and end the plague, he decided to form a seal with the
+                                power of three powerful insects, sealing the temple of the black egg where,
+                                theoretically, the plague was contained.</p>
+                            <p class="texto_2">The dreamers are Herrah the beast, Monomon the teacher, and Lurien the
+                                observer.</p>
                         </div>
                     </div>
                 </div>
@@ -129,7 +191,7 @@
             <a class="carousel-control-prev" href="#zinho_desk" data-bs-slide="prev"></a>
             <a class="carousel-control-next" href="#zinho_desk" data-bs-slide="next"></a>
         </section>
-        <section id="zinho_mobile" class="carousel slide" data-bs-ride="carousel"> <!--Para uso de bootstrap é idealusar nomes em igles pois o boot segue ete momes-->
+        <section id="zinho_mobile" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="carrossel_item_mobile">
@@ -138,12 +200,18 @@
                                 <img src="assets/img/Hollow_Front_mobile.png" alt="">
                             </div>
                         </div>
-                        <div class ="divisor">
+                        <div class="divisor">
                             <img src="assets/img/carrossel_divisor_mobile.png" alt="">
                         </div>
                         <div class="textinho">
-                            <p class="texto_1">Este é você, o personagem principal da história. Apesar da pouca altura, tem grande poder escondido naquela carapaça vazia, uma casca que cobre o vazio que compõe o seu ser. Qual é a sua história? Seria você só mais um dos cavaleiros do rei? Você conseguirá conter a praga que assola nossos sonhos?</p>
-                            <p class="texto_2">Você é o verdadeiro cavaleiro vazio?</p>
+                            <div class="textinho">
+                                <p class="texto_1">This is you, the main character of the story. Despite your short
+                                    stature, you possess great power hidden within that empty shell, a husk that covers
+                                    the void that makes up your being. What is your story? Are you just another one of
+                                    the king's knights? Can you contain the plague that afflicts our dreams?</p>
+                                <p class="texto_2">Are you the true hollow knight?</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -154,13 +222,17 @@
                                 <img src="assets/img/Hornet_front_mobile.png" alt="">
                             </div>
                         </div>
-                        <div class ="divisor">
+                        <div class="divisor">
                             <img src="assets/img/carrossel_divisor_mobile.png" alt="">
                         </div>
                         <div class="textinho">
-                            <p class="texto_1">Está é Hornet, uma oponente formidável de se encontrar, com suas frases enigmáticas e sua agulha afiada ela protege as ruínas de Hallownest, para prosseguir você deve provar ser digno de seu título de cavaleiro, quais enigmas ela esconde? Qual é o seu passado?</p>
-                            <p class="texto_2">Quem são os verdadeiros fantasmas de Hollownest?</p>
+                            <p class="texto_1">This is Hornet, a formidable opponent to encounter. With her enigmatic
+                                phrases and sharp needle, she protects the ruins of Hallownest. To proceed, you must
+                                prove yourself worthy of her title as a knight. What mysteries does she hide? What is
+                                her past?</p>
+                            <p class="texto_2">Who are the true ghosts of Hollownest?</p>
                         </div>
+
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -170,14 +242,18 @@
                                 <img src="assets/img/qirrel_front_mobile.png" alt="">
                             </div>
                         </div>
-                        <div class ="divisor">
+                        <div class="divisor">
                             <img src="assets/img/carrossel_divisor_mobile.png" alt="">
                         </div>
                         <div class="textinho">
-                            <p class="texto_1">Quirrel. onde esse sentimento o levará?
-                                quirrel te ajuda em alguns momentos do jogo, até cumprir o seu papel de chegar onde o sentimento estranho te leva. ele escuta um chamdo até a sala de monomon, a professora, a qual ele carrega uma máscara, mesmo sem lembrar de nada de seu passado.</p>
-                            <p class="texto_2">quem está o chamando? que ligação quirrel tem com monomon, a professora?</p>
+                            <p class="texto_1">Quirrel. Where will this feeling lead him? Quirrel helps you in some
+                                moments of the game until he fulfills his role of reaching where the strange feeling
+                                leads. He hears a call to Monomon's room, the teacher, whom he carries a mask for, even
+                                without remembering anything about his past.</p>
+                            <p class="texto_2">Who is calling him? What connection does Quirrel have with Monomon, the
+                                teacher?</p>
                         </div>
+
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -187,19 +263,26 @@
                                 <img src="assets/img/sonhadores_front_mobile.png" alt="">
                             </div>
                         </div>
-                        <div class ="divisor">
+                        <div class="divisor">
                             <img src="assets/img/carrossel_divisor_mobile.png" alt="">
                         </div>
                         <div class="textinho">
-                            <p class="texto_1">Os três sonhadores, os três protetores de hollownest. em uma das tentativas do rei pálido de vencer e acabar com a praga, ele decidiu formar um selo com o poder de três poderosos insetos, selando o templo do ovo negro onde, teoricamente, estava contida a praga.</p>
-                            <p class="texto_2">os sonhadores são herrah a besta, Monomon a professora e lurien o observador.</p>
+                            <p class="texto_1">The three dreamers, the three protectors of Hollownest. In one of the
+                                Pale King's attempts to overcome and end the plague, he decided to form a seal with the
+                                power of three powerful insects, sealing the temple of the black egg where,
+                                theoretically, the plague was contained.</p>
+                            <p class="texto_2">The dreamers are Herrah the beast, Monomon the teacher, and Lurien the
+                                observer.</p>
                         </div>
+
                     </div>
                 </div>
-            <a class="carousel-control-prev" href="#zinho_mobile" data-bs-slide="prev"></a>
-            <a class="carousel-control-next" href="#zinho_mobile" data-bs-slide="next"></a>
+                <a class="carousel-control-prev" href="#zinho_mobile" data-bs-slide="prev"></a>
+                <a class="carousel-control-next" href="#zinho_mobile" data-bs-slide="next"></a>
+            </div>
         </section>
     </main>
+    <script src="assets/js/App.js"></script>
 </body>
-<script src="assets/js/App.js"></script>
+
 </html>

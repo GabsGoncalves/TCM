@@ -1,22 +1,31 @@
-::-webkit-scrollbar { /*Trilho */
+::-webkit-scrollbar {
+    /*Trilho */
     width: 10px;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 2%, rgba(11,11,24,1) 33%, rgba(11,10,29,1) 69%, rgba(0,0,0,1) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 2%, rgba(11, 11, 24, 1) 33%, rgba(11, 10, 29, 1) 69%, rgba(0, 0, 0, 1) 100%);
 }
 
-::-webkit-scrollbar-thumb { /* Rolagem */
+::-webkit-scrollbar-thumb {
+    /* Rolagem */
     background: #c0c0c0;
     border-radius: 10px;
 }
-  
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 2%, rgba(11, 11, 24, 1) 33%, rgba(11, 10, 29, 1) 69%, rgba(0, 0, 0, 1) 100%);
 }
 
 header {
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 2%, rgba(11,11,24,1) 33%, rgba(11,10,29,1) 69%, rgba(0,0,0,1) 100%);    
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 2%, rgba(11, 11, 24, 1) 33%, rgba(11, 10, 29, 1) 69%, rgba(0, 0, 0, 1) 100%);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -29,10 +38,11 @@ main {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-image: url(/TCM/img/bg_login_desk.svg);
-    background-size: cover; 
-    background-position: center; 
+    background-image: url(../img/bg_login_desk.svg);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+
 }
 
 #login {
@@ -41,7 +51,8 @@ main {
     width: 85%;
 }
 
-#imagem_hollow, #login_inputs {
+#imagem_hollow,
+#login_inputs {
     flex: 50%;
     display: flex;
     align-items: center;
@@ -52,7 +63,7 @@ main {
 #titledesk {
     width: 434px;
     height: 131px;
-    margin-bottom: 49px;
+    display: block;
 }
 
 #titlemobile {
@@ -61,7 +72,7 @@ main {
 
 /* RESPONSIVIDADE TITULO IMAGEM */
 @media screen and (min-width: 1920px) {
-    #login_inputs img {
+    #titledesk {
         width: 650px;
         height: 196px;
     }
@@ -104,18 +115,18 @@ main {
     margin-top: 15px;
 }
 
-#nãoPossui {
+#naoPossui {
     color: #fff;
 }
 
-#nãoPossui a {
+#naoPossui a {
     background-color: #00000069;
     padding: 8px;
     border-radius: 25px;
-    
+
 }
 
-#nãoPossui a:hover {
+#naoPossui a:hover {
     color: #fff;
 }
 
@@ -127,11 +138,7 @@ main {
     color: red;
 }
 
-@media screen and (max-width: 540px) {
-    main {
-        background-image: url(/TCM/img/bg_login_mobile.webp);
-    }
-
+@media screen and (max-width: 940px) {
     #imagem_hollow {
         display: none;
     }
@@ -147,22 +154,66 @@ main {
 
     #titlemobile {
         display: block;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     #login {
         border-radius: 0.75rem;
-        background-color: rgba(255, 255, 255, 0.30);
-        height: 70vh;
         margin-bottom: 11.50rem;
     }
 
-    #dados_login {
-        margin-top: 11.875rem;
-    }
-
-    #nãoPossui a {
+    #naoPossui a {
         color: #fff;
     }
+
+    #dados_login {
+        margin-top: 17rem;
+    }
+
+    .labels {
+        overflow: hidden;
+        overflow-y: scroll;
+        height: 30vh;
+    }    
+}
+
+form {
+    margin-bottom: 2rem;
+}
+
+.escolherImagem {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.30);
+}
+
+.labels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.labelImage {
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+.labelImage.selected {
+    border-color: orange;
+}
+
+.labelImage img {
+    max-width: 200px;
+    height: auto;
 }
 
 /*MEU DEUS POR FAVOR FUNCIONA*/

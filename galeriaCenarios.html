@@ -1,0 +1,234 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/galeria.css">
+    <title>Hollow Knight</title>
+</head>
+
+<body>
+    
+                        <header>
+                        <nav class="new-nav-bar">
+                            <div class="new-logo">
+                                <img src="assets/img/Hollow_Icon.svg" alt="">
+                            </div>
+                            <div class="new-nav-list">
+                                <ul class="ben10">
+                                    <li class="new-nav-item"><a href="index.html" class="new-nav-link">Home</a></li>
+                                    <li id="knight" class="new-nav-item new-nav-link dropdown">Knight <img class="caretKnight" src="assets/img/caret-down-fill.svg" alt="">
+                                        <div class="dropdown-menu knight">
+                                            <a href="amuletos.html" class="new-nav-link">Charms</a>
+                                            <a href="cavaleiro.html" class="new-nav-link">The Nail</a>
+                                            <a href="magias.html" class="new-nav-link">Spells</a>
+                                            <a href="dark.html" class="new-nav-link">Born</a>
+                                            <a href="energias.html" class="new-nav-link">Energys</a>
+                                        </div>
+                                    </li>
+                                    <li id="battle" class="new-nav-item new-nav-link dropdown">Battle <img class="caretBattle" src="assets/img/caret-down-fill.svg" alt="">
+                                        <div class="dropdown-menu battle">
+                                            <a href="coliseu.html" class="new-nav-link">Colosseum</a>
+                                            <a href="panteao.html" class="new-nav-link">Pantheon</a>
+                                            <a href="radiancia.html" class="new-nav-link">Radiance</a>
+                                        </div>
+                                    </li>
+                                    <li id="gallery" class="new-nav-item new-nav-link dropdown">Gallery <img class="caretGallery" src="assets/img/caret-down-fill.svg" alt="">
+                                        <div class="dropdown-menu gallery">
+                                            <a href="dark.html" class="new-nav-link">Born</a>
+                                            <a href="galeriaCenarios.html" class="new-nav-link">Scenes</a>
+                                        </div>
+                                    </li>
+                                    <li class="new-nav-item"><a href="dlc.html" class="new-nav-link">DLC</a></li>
+                                    <li class="new-nav-item"><a href="sonhadores.html" class="new-nav-link">Dreamers</a></li>
+                                    <li class="new-nav-item"><a href="silksong.html" class="new-nav-link">Silksong</a></li>
+                                    <li class="new-nav-item"><a href="florDelicada.html" class="new-nav-link">Delicate Flower</a></li>
+                                    <li class="new-nav-item"><a href="quiz.html" class="new-nav-link">Quiz</a></li>
+                                </ul>
+                            </div>
+                            <div class="new-login-button">
+                                <button onclick="link('login.html')">Login</button>
+                            </div>
+                
+                            <div class="new-mobile-menu-icon">
+                                <button onclick="menuShow()"><img class="new-icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+                            </div>
+                        </nav>
+                        <div class="new-mobile-menu">
+                            <ul class="ben10">
+                                <li class="new-nav-item"><a href="index.html" class="new-nav-link">Home</a></li>
+                                <li id="knightMobile" class="new-nav-item new-nav-link dropdown">Knight <img class="caretKnight" src="assets/img/caret-down-fill.svg" alt="">
+                                    <div class="dropdown-menu knightMobile">
+                                        <a href="amuletos.html" class="new-nav-link">Charms</a>
+                                        <a href="cavaleiro.html" class="new-nav-link">The Nail</a>
+                                        <a href="magias.html" class="new-nav-link">Spells</a>
+                                        <a href="dark.html" class="new-nav-link">Born</a>
+                                        <a href="energias.html" class="new-nav-link">Energys</a>
+                                    </div>
+                                </li>
+                                <li id="battleMobile" class="new-nav-item new-nav-link dropdown">Battle <img class="caretBattle" src="assets/img/caret-down-fill.svg" alt="">
+                                    <div class="dropdown-menu battleMobile">
+                                        <a href="coliseu.html" class="new-nav-link">Colosseum</a>
+                                        <a href="panteao.html" class="new-nav-link">Pantheon</a>
+                                        <a href="radiancia.html" class="new-nav-link">Radiance</a>
+                                    </div>
+                                </li>
+                                <li id="galleryMobile" class="new-nav-item new-nav-link dropdown">Gallery <img class="caretGallery" src="assets/img/caret-down-fill.svg" alt="">
+                                    <div class="dropdown-menu galleryMobile">
+                                        <a href="dark.html" class="new-nav-link">Born</a>
+                                        <a href="galeriaCenarios.html" class="new-nav-link">Scenes</a>
+                                    </div>
+                                </li>
+                                <li class="new-nav-item"><a href="dlc.html" class="new-nav-link">DLC</a></li>
+                                <li class="new-nav-item"><a href="sonhadores.html" class="new-nav-link">Dreamers</a></li>
+                                <li class="new-nav-item"><a href="silksong.html" class="new-nav-link">Silksong</a></li>
+                                <li class="new-nav-item"><a href="florDelicada.html" class="new-nav-link">Delicate Flower</a></li>
+                                <li class="new-nav-item"><a href="quiz.html" class="new-nav-link">Quiz</a></li>
+                            </ul>
+                            <div class="new-login-button">
+                                <button onclick="link('login.html')">Login</button>
+                            </div>
+                        </div>
+                    </header>
+    
+    <main>
+        <button id="prevBtn"><img src="assets/img_galeria/arrow.png" alt=""></button>
+        <div class="galeriaContainer">
+            <div class="galeria slider on">
+                <div class="single-galeria wg2 hg2">
+                    <div class="img">
+                        <img src="assets/img_galeria/hollowQuirel.webp" alt="">
+                    </div>
+                    <div class="overflow"></div>
+                    <div class="conteudo">
+                        <h1>Quirrel and the Knight</h1>
+                        <p>Blue Lake</p>
+                    </div>
+                </div>
+                <div class="single-galeria wg2">
+                    <div class="img">
+                        <img src="assets/img_galeria/estatuasLagrimas.webp" alt="">
+                    </div>
+                    <div class="overflow"></div>
+                    <div class="conteudo">
+                        <h1>Memorial fountain to the Hollow Knight</h1>
+                        <p>Fountain Square</p>
+                    </div>
+                </div>
+                <div class="single-galeria">
+                    <div class="img">
+                        <img src="assets/img_galeria/greenPath.png" alt="">
+                    </div>
+                    <div class="overflow"></div>
+                    <div class="conteudo">
+                        <h1>Large fallen beetle</h1>
+                        <p>Green Path</p>
+                    </div>
+                </div>
+                <div class="single-galeria">
+                    <div class="img">
+                        <img src="assets/img_galeria/abyssGrito.jpeg" alt="">
+                    </div>
+                    <div class="overflow"></div>
+                    <div class="conteudo">
+                        <h1>Abyss</h1>
+                        <p>Abyss</p>
+                    </div>
+                </div>
+            </div>
+            <div class="galeria slider">
+                <div class="single-galeria">
+                    <div class="img">
+                        <img src="assets/img_galeria/abyss.jpg" alt="">
+                    </div>
+                    <div class="overflow"></div>
+                    <div class="conteudo">
+                        <h1>Abyss</h1>
+                        <p>Abyss</p>
+                    </div>
+                </div>
+                <div class="single-galeria">
+                    <div class="img">
+                        <img src="assets/img_galeria/paleKing.jpg" alt="">
+                    </div>
+                    <div class="overflow"></div>
+                    <div class="conteudo">
+                        <h1>Hollow Knight and the Pale King</h1>
+                        <p>White Palace</p>
+                    </div>
+                </div>
+                <div class="single-galeria wg2 hg2">
+                    <div class="img">
+                        <img src="assets/img_galeria/lifeblood.jpg" alt="">
+                    </div>
+                    <div class="overflow"></div>
+                    <div class="conteudo">
+                        <h1>Secret area of Life Blood</h1>
+                        <p>Abyss</p>
+                    </div>
+                </div>
+                <div class="single-galeria wg2">
+                    <div class="img">
+                        <img src="assets/img_galeria/grimmBG.webp" alt="">
+                    </div>
+                    <div class="overflow"></div>
+                    <div class="conteudo">
+                        <h1>audience in battle vs Grimm</h1>
+                        <p>Dirthmounth</p>
+                    </div>
+                </div>
+            </div>
+            <div class="galeria slider">
+                <div class="single-galeria wg2 hg2">
+                    <div class="img">
+                        <img src="assets/img_galeria/unn.webp" alt="">
+                    </div>
+                    <div class="overflow"></div>
+                    <div class="conteudo">
+                        <h1>Moss Knight</h1>
+                        <p>Lake of Unn</p>
+                    </div>
+                </div>
+                <div class="single-galeria wg2">
+                    <div class="img">
+                        <img src="assets/img_galeria/coliseu.jpg" alt="">
+                    </div>
+                    <div class="overflow"></div>
+                    <div class="conteudo">
+                        <h1>Colosseum of Fools</h1>
+                        <p>Kingdom's Edge</p>
+                    </div>
+                </div>
+                <div class="single-galeria">
+                    <div class="img">
+                        <img src="assets/img_galeria/godmaster.jpeg" alt="">
+                    </div>
+                    <div class="overflow"></div>
+                    <div class="conteudo">
+                        <h1>Godseeker being pulled by the Void Entity</h1>
+                        <p>Godhome</p>
+                    </div>
+                </div>
+                <div class="single-galeria">
+                    <div class="img">
+                        <img src="assets/img_galeria/jardins.webp" alt="">
+                    </div>
+                    <div class="overflow"></div>
+                    <div class="conteudo">
+                        <h1>Statue of the Pale King in the Queen's Gardens</h1>
+                        <p>Queen's Gardens</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="nextBtn"><img src="assets/img_galeria/arrow.png" alt=""></button>
+    </main>
+    <script src="assets/js/App.js"></script>
+    <script src="assets/js/galeria.js"></script>
+</body>
+
+</html>
