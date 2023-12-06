@@ -134,7 +134,6 @@ ol, ul {
     padding-left: 0;
 }
 
-<<<<<<< HEAD
 img.caretKnight, img.caretBattle, img.caretGallery  {
     filter: invert(100%);
 }
@@ -158,20 +157,6 @@ div.dropdown-menu a{
 } */
 
 @media screen and (max-width: 940px) {
-=======
-@media screen and (max-width: 1160px) {
-    ul#ben10 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    ul#ben10 li {
-        margin: 8px;
-    }
-}
-
-@media screen and (max-width: 750px) {
->>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
     .new-nav-bar {
         padding: 1.5rem 4rem;
     }
@@ -209,13 +194,10 @@ div.dropdown-menu a{
     .new-open {
         display: block;
     }
-<<<<<<< HEAD
 
     div.dropdown-menu {
         position: relative;
     }
-=======
->>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
 }
 
 #infosPerfil {

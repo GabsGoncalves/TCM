@@ -1,10 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
     text-align: center;
-=======
->>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
     box-sizing: border-box;
 }
 
@@ -62,11 +59,7 @@ div.container4 {
     height: 100vh;
 }
 
-<<<<<<< HEAD
 div.falas {
-=======
-div#falas {
->>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
     background-color: #49265294;
     width: 90%;
     display: grid;
@@ -75,29 +68,17 @@ div#falas {
     margin-top: rem;
 }
 
-<<<<<<< HEAD
 div.falas > ul {
-=======
-div#falas > ul {
->>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
     list-style: none;
     padding: 15px;
 }
 
-<<<<<<< HEAD
 div.falas > ul > li {
-=======
-div#falas > ul > li {
->>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
     margin: 10px;
     color: #fff;
 }
 
-<<<<<<< HEAD
 div.tres {
-=======
-div#tres {
->>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,29 +86,17 @@ div#tres {
     width: 90%;
 }
 
-<<<<<<< HEAD
 div.dois {
-=======
-div#dois {
->>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
     display: grid;
     place-items: center;
     flex: 35%;
 }
 
-<<<<<<< HEAD
 div.dois > img {
     width: 30%;
 }
 
 div.texto {
-=======
-div#dois > img {
-    width: 30%;
-}
-
-div#texto {
->>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
     flex: 35%;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.541);
@@ -135,16 +104,10 @@ div#texto {
     border-radius: 5%;
 }
 
-<<<<<<< HEAD
 div.vazio {
     flex: 30%;
     color: #fff;
     text-align: center;
-=======
-div#vazio {
-    flex: 30%;
-    color: #fff;
->>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
 }
 
 div.title {
@@ -176,12 +139,9 @@ div.info {
     font-size: 1.2rem;
     color: #fff;
     flex: 25%;
-<<<<<<< HEAD
     background: rgba(0, 0, 0, 0.27);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-=======
->>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
 }
 
 [data-animar] {
@@ -212,7 +172,6 @@ div.info {
 .animado {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
-<<<<<<< HEAD
 }
 
 @media screen and (max-width: 900px) {
@@ -255,6 +214,4 @@ div.info {
     div.vazio {
         margin-bottom: 2rem;
     }
-=======
->>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
 }
