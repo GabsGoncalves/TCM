@@ -23,6 +23,13 @@ function exibirConteudoCard(card) {
 }
 
 function trocarDlc(indice, nome) {
+<<<<<<< HEAD
+=======
+    let construtorCard = `boss.html?card=${nome}`
+    document.querySelectorAll('.new-nav-link').forEach(function(link) {
+        link.href = construtorCard;
+      });
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
     for (let j = 0; j < dlcs.length; j++) {
         dlcs[j].style.display = "none";
         bgimg.src = "";

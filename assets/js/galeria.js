@@ -1,10 +1,13 @@
 const slider = document.querySelectorAll('.slider');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
+<<<<<<< HEAD
 const single = document.querySelectorAll('.single-galeria');
 const overflow = document.querySelectorAll('.overflow');
 const conteudo = document.querySelectorAll('.conteudo')
 
+=======
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
 let videoAtivo = 0;
 
 function hideSlide() {

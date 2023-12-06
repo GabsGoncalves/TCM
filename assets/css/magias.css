@@ -5,7 +5,11 @@ html {
 }
 
 body {
+<<<<<<< HEAD
     background-image: url(../assets/img_magias/bg.svg);
+=======
+    background-image: url(../img_magias/bg.svg);
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

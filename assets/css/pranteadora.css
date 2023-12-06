@@ -22,7 +22,11 @@ main, #inicio {
     flex-direction: column;
 }
 
+<<<<<<< HEAD
 .ostres {
+=======
+#ostres {
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +35,11 @@ main, #inicio {
     width: 90%;
 }
 
+<<<<<<< HEAD
 .osdois {
+=======
+#osdois {
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +47,11 @@ main, #inicio {
     flex: 70%;
 }
 
+<<<<<<< HEAD
 .ferreiroDiv{
+=======
+#ferreiroDiv {
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,12 +61,20 @@ main, #inicio {
     width: 90%;
 }
 
+<<<<<<< HEAD
 .ferreiro {
+=======
+#ferreiro {
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
     transform: translateY(0px);
     animation: balancar 1.4s ease-in-out infinite;
 }
 
+<<<<<<< HEAD
 .ferreiro2 {
+=======
+#ferreiro2 {
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
     transform: translateY(0px);
     animation: balancar 1.4s ease-in-out infinite;
 }
@@ -282,7 +302,11 @@ div.texto {
     * {
         text-align: center;
     }
+<<<<<<< HEAD
     .ostres {
+=======
+    #ostres {
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
         flex-direction: column;
     }
 
@@ -295,7 +319,11 @@ div.texto {
         width: 100vw;
     }
 
+<<<<<<< HEAD
     .title {
+=======
+    #title {
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
         margin-top: 4rem;
     }
 

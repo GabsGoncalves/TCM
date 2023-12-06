@@ -146,7 +146,7 @@ p {
     to {opacity: 1;}
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 770px) {
 
     #bg_video {
         position: absolute;
@@ -190,6 +190,7 @@ p {
         display: none;
     }
 
+<<<<<<< HEAD
     #entre_vazio_desk {
         width: 100%;
     }
@@ -198,3 +199,6 @@ p {
         width: 90%;
     }
 }
+=======
+}
+>>>>>>> d56b23bf2fedb9b492da7045b4db545ce8880118
